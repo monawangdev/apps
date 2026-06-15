@@ -1,0 +1,42 @@
+---
+import AppDock from '../../components/AppDock.astro';
+import AppTile from '../../components/AppTile.astro';
+import { apps } from '../../content/apps';
+import { locales, localePath, type Locale, ui } from '../../content/i18n';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { organizationJsonLd } from '../../components/SeoJsonLd';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const t = ui[locale];
+const title = `${t.family} - ${t.heroTitle}`;
+const description = t.heroLead;
+const path = localePath(locale);
+const alternates = locales.map((item) => ({ locale: item, href: localePath(item) }));
+---
+
+<BaseLayout locale={locale} title={title} description={description} path={path} alternates={alternates} jsonLd={[organizationJsonLd()]}>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">{t.catalogLabel}</p>
+        <h1>{t.heroTitle}</h1>
+        <p>{t.heroLead}</p>
+        <a class="button-primary" href="#apps">{t.heroCta}</a>
+      </div>
+      <AppDock apps={apps} locale={locale} />
+    </section>
+    <section id="apps" class="intro-band">
+      <div>
+        <p class="eyebrow">{t.availableApps}</p>
+        <h2>{t.appsIntro}</h2>
+      </div>
+    </section>
+    <section class="app-grid" aria-label={t.relatedApps}>
+      {apps.map((app, index) => <AppTile app={app} locale={locale} index={index} />)}
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" role="img" aria-labelledby="title desc">
+  <title id="title">JSON Prettify screenshot placeholder</title>
+  <desc id="desc">Placeholder frame showing JSON tree, JSONPath, search, and graph controls.</desc>
+  <rect width="1440" height="980" rx="42" fill="#f5f5f7"/>
+  <rect x="76" y="72" width="1288" height="76" rx="22" fill="#111418"/>
+  <circle cx="116" cy="110" r="10" fill="#ff5f57"/><circle cx="150" cy="110" r="10" fill="#febc2e"/><circle cx="184" cy="110" r="10" fill="#28c840"/>
+  <text x="232" y="119" font-family="SF Pro Text, Arial" font-size="24" fill="#f5f5f7">JSON Prettify - Tree / Graph / JSONPath</text>
+  <rect x="76" y="184" width="380" height="704" rx="28" fill="#ffffff"/>
+  <rect x="492" y="184" width="872" height="704" rx="28" fill="#ffffff"/>
+  <text x="124" y="258" font-family="SF Pro Text, Arial" font-size="28" font-weight="700" fill="#1d1d1f">$.products[*]</text>
+  <text x="124" y="318" font-family="Menlo, monospace" font-size="24" fill="#0066cc">{ "products": [</text>
+  <text x="156" y="370" font-family="Menlo, monospace" font-size="24" fill="#2b8a3e">"TrailForge 45L"</text>
+  <text x="156" y="422" font-family="Menlo, monospace" font-size="24" fill="#d9480f">149.95</text>
+  <text x="156" y="474" font-family="Menlo, monospace" font-size="24" fill="#862e9c">true</text>
+  <text x="124" y="526" font-family="Menlo, monospace" font-size="24" fill="#0066cc">] }</text>
+  <rect x="574" y="278" width="270" height="116" rx="22" fill="#eaf3ff" stroke="#0066cc"/>
+  <rect x="966" y="278" width="270" height="116" rx="22" fill="#f4f9ee" stroke="#2b8a3e"/>
+  <rect x="770" y="522" width="270" height="116" rx="22" fill="#fff4e8" stroke="#d9480f"/>
+  <path d="M844 336 C900 336 910 336 966 336M980 394 C940 450 884 482 864 522" stroke="#adb5bd" stroke-width="8" fill="none"/>
+</svg>

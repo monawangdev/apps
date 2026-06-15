@@ -1,0 +1,46 @@
+---
+import { apps } from '../../content/apps';
+import TextHero from '../../components/TextHero.astro';
+import { locales, localePath, supportEmail, type Locale, ui } from '../../content/i18n';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd, organizationJsonLd } from '../../components/SeoJsonLd';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const t = ui[locale];
+const path = localePath(locale, 'privacy/');
+const alternates = locales.map((item) => ({ locale: item, href: localePath(item, 'privacy/') }));
+const title = `${t.privacy} - ${t.family}`;
+const description = t.privacyLead;
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={description}
+  path={path}
+  alternates={alternates}
+  jsonLd={[organizationJsonLd(), breadcrumbJsonLd([{ name: t.family, url: localePath(locale) }, { name: t.privacy, url: path }])]}
+>
+  <main class="text-page">
+    <TextHero eyebrow={t.privacy} title={t.privacyLead}>
+      <p>Safari Format Apps do not add analytics to this website. The extensions format supported content in Safari, store only local viewer settings, and do not send page content to project servers.</p>
+    </TextHero>
+    <section class="privacy-panel">
+      <div>
+        <h2>{t.permissionTitle}</h2>
+        <p>Storage saves settings. Tabs coordinate reload and active view state. Context menus expose quick actions. All-URL matching lets each extension detect supported response pages. XML Prettify also declares host permission for XML loading flows.</p>
+      </div>
+      <div>
+        <h2>{t.relatedApps}</h2>
+        <ul>
+          {apps.map((app) => <li><strong>{app.copy[locale].name}</strong>: {app.copy[locale].description}</li>)}
+        </ul>
+      </div>
+    </section>
+    <p class="fine-print">Contact: <a href={`mailto:${supportEmail}`}>{supportEmail}</a></p>
+  </main>
+</BaseLayout>

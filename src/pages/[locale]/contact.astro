@@ -1,0 +1,43 @@
+---
+import { apps } from '../../content/apps';
+import TextHero from '../../components/TextHero.astro';
+import { locales, localePath, supportEmail, type Locale, ui } from '../../content/i18n';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd, organizationJsonLd } from '../../components/SeoJsonLd';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const t = ui[locale];
+const path = localePath(locale, 'contact/');
+const alternates = locales.map((item) => ({ locale: item, href: localePath(item, 'contact/') }));
+const title = `${t.contact} - ${t.family}`;
+const description = t.contactLead;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const withBase = (href: string) => `${base}${href.replace(/^\/+/, '')}`;
+---
+
+<BaseLayout
+  locale={locale}
+  title={title}
+  description={description}
+  path={path}
+  alternates={alternates}
+  jsonLd={[organizationJsonLd(), breadcrumbJsonLd([{ name: t.family, url: localePath(locale) }, { name: t.contact, url: path }])]}
+>
+  <main class="text-page">
+    <TextHero eyebrow={t.contact} title={t.contactLead}>
+      <p><a class="button-primary" href={`mailto:${supportEmail}`}>{supportEmail}</a></p>
+    </TextHero>
+    <section class="contact-grid">
+      {apps.map((app) => (
+        <a href={withBase(localePath(locale, `apps/${app.id}/`))}>
+          <img src={withBase(`/assets/icons/${app.icon}`)} alt="" />
+          <span>{app.copy[locale].name}</span>
+        </a>
+      ))}
+    </section>
+  </main>
+</BaseLayout>

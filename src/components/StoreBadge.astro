@@ -1,0 +1,23 @@
+---
+import type { ProductApp } from '../content/apps';
+import type { Locale } from '../content/i18n';
+import { localeMeta, ui } from '../content/i18n';
+
+type Props = {
+  app: ProductApp;
+  locale: Locale;
+};
+
+const { app, locale } = Astro.props;
+const t = ui[locale];
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const withBase = (href: string) => `${base}${href.replace(/^\/+/, '')}`;
+---
+
+<a class="store-badge" href={app.storeUrl} aria-label={`${t.download}: ${app.copy[locale].name}`}>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset={withBase(`/assets/badges/${locale}/mac-app-store-dark.svg`)} />
+    <img src={withBase(`/assets/badges/${locale}/${localeMeta[locale].badge}`)} alt={t.download} loading="lazy" />
+  </picture>
+  <span>{t.downloadPending}</span>
+</a>

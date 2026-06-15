@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" role="img" aria-labelledby="title desc">
+  <title id="title">XML Prettify screenshot placeholder</title>
+  <desc id="desc">Placeholder frame showing XML tree and XPath search.</desc>
+  <rect width="1440" height="980" rx="42" fill="#f5f5f7"/>
+  <rect x="78" y="78" width="1284" height="824" rx="34" fill="#ffffff"/>
+  <text x="132" y="158" font-family="SF Pro Text, Arial" font-size="32" font-weight="700" fill="#1d1d1f">XML Prettify</text>
+  <rect x="132" y="204" width="520" height="54" rx="27" fill="#e7f7fa"/>
+  <text x="162" y="240" font-family="SF Pro Text, Arial" font-size="22" fill="#0b7285">//product[@available="true"]</text>
+  <text x="142" y="330" font-family="Menlo, monospace" font-size="24" fill="#0b7285">&lt;catalog&gt;</text>
+  <text x="184" y="390" font-family="Menlo, monospace" font-size="24" fill="#0066cc">&lt;product id="NS-BP-45"&gt;</text>
+  <text x="226" y="450" font-family="Menlo, monospace" font-size="24" fill="#2b8a3e">&lt;name&gt;TrailForge 45L&lt;/name&gt;</text>
+  <text x="226" y="510" font-family="Menlo, monospace" font-size="24" fill="#d9480f">&lt;price currency="USD"&gt;149.95&lt;/price&gt;</text>
+  <text x="184" y="570" font-family="Menlo, monospace" font-size="24" fill="#0066cc">&lt;/product&gt;</text>
+  <text x="142" y="630" font-family="Menlo, monospace" font-size="24" fill="#0b7285">&lt;/catalog&gt;</text>
+  <rect x="920" y="294" width="260" height="108" rx="22" fill="#e7f7fa" stroke="#0b7285"/>
+  <rect x="920" y="486" width="260" height="108" rx="22" fill="#eef7ff" stroke="#0066cc"/>
+  <path d="M1050 402 V486" stroke="#adb5bd" stroke-width="8"/>
+</svg>

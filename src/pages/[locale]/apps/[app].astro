@@ -1,0 +1,72 @@
+---
+import StoreBadge from '../../../components/StoreBadge.astro';
+import { appIds, getApp, type AppId } from '../../../content/apps';
+import { locales, localePath, type Locale, ui } from '../../../content/i18n';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { breadcrumbJsonLd, organizationJsonLd, softwareJsonLd } from '../../../components/SeoJsonLd';
+
+export function getStaticPaths() {
+  return locales.flatMap((locale) => appIds.map((app) => ({ params: { locale, app } })));
+}
+
+const locale = Astro.params.locale as Locale;
+const appId = Astro.params.app as AppId;
+const app = getApp(appId);
+if (!app) throw new Error(`Unknown app: ${appId}`);
+const t = ui[locale];
+const copy = app.copy[locale];
+const showcase = app.showcase?.[locale] ?? [];
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const withBase = (href: string) => `${base}${href.replace(/^\/+/, '')}`;
+const path = localePath(locale, `apps/${app.id}/`);
+const title = `${copy.name} - ${copy.tagline}`;
+const description = copy.description;
+const alternates = locales.map((item) => ({ locale: item, href: localePath(item, `apps/${app.id}/`) }));
+const jsonLd = [
+  organizationJsonLd(),
+  softwareJsonLd(app, locale),
+  breadcrumbJsonLd([
+    { name: t.family, url: localePath(locale) },
+    { name: copy.name, url: path },
+  ]),
+];
+---
+
+<BaseLayout locale={locale} title={title} description={description} path={path} alternates={alternates} jsonLd={jsonLd}>
+  <main>
+    <section class="app-hero" style={`--accent:${app.accent}`}>
+      <div>
+        <img class="app-icon app-icon-large" src={withBase(`/assets/icons/${app.icon}`)} alt="" width="96" height="96" />
+        <p class="eyebrow">{app.category} · {app.platforms.join(' / ')}</p>
+        <h1>{copy.tagline}</h1>
+        <p>{copy.description}</p>
+        <StoreBadge app={app} locale={locale} />
+      </div>
+      <img class="hero-screenshot" src={withBase(`/assets/screenshots/${app.screenshot}`)} alt={`${copy.name} ${t.screenshotPlaceholder}`} />
+    </section>
+    <section class="feature-section">
+      <div>
+        <p class="eyebrow">{t.features}</p>
+        <h2>{copy.screenshotTitle}</h2>
+        <p>{copy.screenshotDescription}</p>
+      </div>
+      <ul class="feature-list">
+        {copy.features.map((feature) => <li>{feature}</li>)}
+      </ul>
+    </section>
+    {showcase.length > 0 && (
+      <section class="showcase-list" aria-label={copy.screenshotTitle}>
+        {showcase.map((item, index) => (
+          <article class={`showcase-item ${index % 2 === 1 ? 'showcase-item-reverse' : ''}`}>
+            <div class="showcase-copy">
+              <p class="eyebrow">{copy.name}</p>
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+            </div>
+            <img src={withBase(`/assets/screenshots/${item.image}`)} alt={item.title} loading="lazy" />
+          </article>
+        ))}
+      </section>
+    )}
+  </main>
+</BaseLayout>

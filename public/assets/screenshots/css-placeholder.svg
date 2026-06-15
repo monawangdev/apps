@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" role="img" aria-labelledby="title desc">
+  <title id="title">CSS Prettify screenshot placeholder</title>
+  <desc id="desc">Placeholder frame showing formatted CSS with color swatches.</desc>
+  <rect width="1440" height="980" rx="42" fill="#f5f5f7"/>
+  <rect x="84" y="82" width="1272" height="816" rx="34" fill="#ffffff"/>
+  <text x="140" y="170" font-family="SF Pro Text, Arial" font-size="32" font-weight="700" fill="#1d1d1f">CSS Prettify</text>
+  <text x="140" y="240" font-family="Menlo, monospace" font-size="24" fill="#6c757d">.product-card {</text>
+  <circle cx="180" cy="300" r="16" fill="#0066cc"/><text x="224" y="309" font-family="Menlo, monospace" font-size="24" fill="#0066cc">color: #0066cc;</text>
+  <circle cx="180" cy="360" r="16" fill="#f5f5f7" stroke="#d2d2d7"/><text x="224" y="369" font-family="Menlo, monospace" font-size="24" fill="#2b8a3e">background: #f5f5f7;</text>
+  <text x="180" y="429" font-family="Menlo, monospace" font-size="24" fill="#d9480f">border-radius: 18px;</text>
+  <text x="180" y="489" font-family="Menlo, monospace" font-size="24" fill="#862e9c">box-shadow: 0 34px 70px rgba(...);</text>
+  <text x="140" y="549" font-family="Menlo, monospace" font-size="24" fill="#6c757d">}</text>
+  <rect x="900" y="220" width="300" height="300" rx="42" fill="#0066cc"/>
+  <rect x="960" y="580" width="240" height="56" rx="28" fill="#1d1d1f"/>
+</svg>

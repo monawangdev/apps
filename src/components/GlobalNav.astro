@@ -1,0 +1,36 @@
+---
+import { localeLabels, locales, localePath, type Locale, ui } from '../content/i18n';
+
+type AlternateLink = {
+  locale: Locale;
+  href: string;
+};
+
+type Props = {
+  locale: Locale;
+  alternates: AlternateLink[];
+};
+
+const { locale, alternates } = Astro.props;
+const t = ui[locale];
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const withBase = (href: string) => `${base}${href.replace(/^\/+/, '')}`;
+---
+
+<header class="global-nav">
+  <a class="brand" href={withBase(localePath(locale))} aria-label={t.family}>
+    <span class="brand-mark">SF</span>
+    <span>{t.family}</span>
+  </a>
+  <div class="nav-tools">
+    <details class="locale-menu">
+      <summary>{localeLabels[locale]}</summary>
+      <div class="locale-list">
+        {locales.map((item) => (
+          <a href={withBase(alternates.find((alternate) => alternate.locale === item)?.href ?? localePath(item))}>{localeLabels[item]}</a>
+        ))}
+      </div>
+    </details>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">{t.theme}</button>
+  </div>
+</header>

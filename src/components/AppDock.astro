@@ -1,0 +1,23 @@
+---
+import type { ProductApp } from '../content/apps';
+import { localePath, type Locale, ui } from '../content/i18n';
+
+type Props = {
+  apps: ProductApp[];
+  locale: Locale;
+};
+
+const { apps, locale } = Astro.props;
+const t = ui[locale];
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const withBase = (href: string) => `${base}${href.replace(/^\/+/, '')}`;
+---
+
+<div class="app-dock" aria-label={t.availableApps}>
+  {apps.map((app) => (
+    <a href={withBase(localePath(locale, `apps/${app.id}/`))} style={`--accent:${app.accent}`}>
+      <img src={withBase(`/assets/icons/${app.icon}`)} alt="" />
+      <span>{app.copy[locale].shortName}</span>
+    </a>
+  ))}
+</div>
