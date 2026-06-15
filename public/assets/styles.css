@@ -96,7 +96,6 @@ img {
 }
 
 .brand,
-.nav-links,
 .nav-tools,
 .site-footer nav,
 .related-icons,
@@ -123,19 +122,16 @@ img {
   font-weight: 700;
 }
 
-.nav-links,
 .nav-tools {
   gap: 22px;
 }
 
-.nav-links a,
 .site-footer a {
   color: currentColor;
   text-decoration: none;
   opacity: .78;
 }
 
-.nav-links a:hover,
 .site-footer a:hover {
   opacity: 1;
 }
@@ -580,12 +576,6 @@ h3 {
     min-height: 50px;
     flex-wrap: wrap;
     padding-block: 10px;
-  }
-
-  .nav-links {
-    order: 3;
-    width: 100%;
-    justify-content: space-between;
   }
 
   .hero,

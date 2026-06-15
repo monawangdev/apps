@@ -1,5 +1,4 @@
 ---
-import { apps } from '../../content/apps';
 import TextHero from '../../components/TextHero.astro';
 import { locales, localePath, supportEmail, type Locale, ui } from '../../content/i18n';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -14,7 +13,7 @@ const t = ui[locale];
 const path = localePath(locale, 'privacy/');
 const alternates = locales.map((item) => ({ locale: item, href: localePath(item, 'privacy/') }));
 const title = `${t.privacy} - ${t.family}`;
-const description = t.privacyLead;
+const description = 'This app does not collect your personal data.';
 ---
 
 <BaseLayout
@@ -26,21 +25,53 @@ const description = t.privacyLead;
   jsonLd={[organizationJsonLd(), breadcrumbJsonLd([{ name: t.family, url: localePath(locale) }, { name: t.privacy, url: path }])]}
 >
   <main class="text-page">
-    <TextHero eyebrow={t.privacy} title={t.privacyLead}>
-      <p>Safari Format Apps do not add analytics to this website. The extensions format supported content in Safari, store only local viewer settings, and do not send page content to project servers.</p>
+    <TextHero eyebrow={t.privacy} title="This app does not collect your personal data.">
+      <p>This Privacy Policy describes how app data is handled. It does not describe app permission behavior.</p>
     </TextHero>
-    <section class="privacy-panel">
-      <div>
-        <h2>{t.permissionTitle}</h2>
-        <p>Storage saves settings. Tabs coordinate reload and active view state. Context menus expose quick actions. All-URL matching lets each extension detect supported response pages. XML Prettify also declares host permission for XML loading flows.</p>
-      </div>
-      <div>
-        <h2>{t.relatedApps}</h2>
-        <ul>
-          {apps.map((app) => <li><strong>{app.copy[locale].name}</strong>: {app.copy[locale].description}</li>)}
-        </ul>
-      </div>
+
+    <section class="privacy-policy" aria-label="Privacy Policy">
+      <article>
+        <h2>Data collection</h2>
+        <p>The app does not collect your personal data. The app does not use analytics, advertising tracking, third-party tracking SDKs, or profiling.</p>
+      </article>
+
+      <article>
+        <h2>Local data</h2>
+        <p>The only data stored by the app is your app settings. These settings are stored locally on your device and, if enabled, may be stored in your personal iCloud account. No one other than you has access to this data.</p>
+      </article>
+
+      <article>
+        <h2>Browsing data</h2>
+        <p>The app does not store your browsing history, visited websites, or website content. This information is not collected, transmitted, or stored locally by the app.</p>
+      </article>
+
+      <article>
+        <h2>Issue reports</h2>
+        <p>If you choose to report an issue through the app, the report may be sent to a server and stored in a database accessible only by the developer.</p>
+        <p>An issue report may include the domain or subdomain of the reported website, the full page URL if you choose to include it, the issue category, your description, the app version, the type of device used, and an anonymized hash of your IP address.</p>
+        <p>Issue reports are used only to investigate problems and improve app functionality.</p>
+      </article>
+
+      <article>
+        <h2>Third parties</h2>
+        <p>The app does not sell, rent, or share your personal data. The app does not send your data to advertisers or data brokers.</p>
+      </article>
+
+      <article>
+        <h2>Children's privacy</h2>
+        <p>The app is not designed to collect data from children. Because the app does not collect personal data, no children's personal data is knowingly collected.</p>
+      </article>
+
+      <article>
+        <h2>Changes</h2>
+        <p>This Privacy Policy may be updated when app data handling changes. The latest version will be posted on this page.</p>
+      </article>
+
+      <article>
+        <h2>Contact</h2>
+        <p>If you have questions about this Privacy Policy, contact the developer at <a href={`mailto:${supportEmail}`}>{supportEmail}</a>.</p>
+      </article>
     </section>
-    <p class="fine-print">Contact: <a href={`mailto:${supportEmail}`}>{supportEmail}</a></p>
+    <p class="fine-print">Last updated: June 15, 2026</p>
   </main>
 </BaseLayout>
