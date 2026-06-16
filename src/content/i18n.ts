@@ -2,7 +2,7 @@ export const locales = ['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko'] as const;
 export type Locale = typeof locales[number];
 
 export const defaultLocale: Locale = 'en';
-export const supportEmail = 'support@example.com';
+export const supportEmail = 'monawang.dev@gmail.com';
 
 export const localeLabels: Record<Locale, string> = {
   en: 'English',
