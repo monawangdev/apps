@@ -1,0 +1,71 @@
+# Edge cases and special values
+empty_values:
+  empty_string: ''
+  empty_array: []
+  empty_object: {}
+  null_value: null
+  tilde_null: ~
+  nested_empty:
+    arr: []
+    obj: {}
+    str: ''
+    deep: {inner: {leaf: null}}
+
+booleans:
+  true_values:
+    - true
+    - True
+    - TRUE
+    - yes
+    - Yes
+    - YES
+    - on
+    - On
+    - ON
+  false_values:
+    - false
+    - False
+    - FALSE
+    - no
+    - No
+    - NO
+    - off
+    - Off
+    - OFF
+
+numbers:
+  zero: 0
+  negative_zero: -0
+  integer: 42
+  negative: -273
+  float: 3.14159265358979
+  small_float: 0.000001
+  large_int: 9007199254740991
+  scientific: 1.23e10
+  neg_scientific: -4.56e-7
+  infinity: .inf
+  nan: .nan
+
+special_strings:
+  with_newlines: |
+    line one
+    line two
+    line three
+  with_backslash: 'path\\to\\file'
+  with_quotes: 'He said "hello" and she said ''hi'''
+  with_unicode: 你好世界 こんにちは 안녕하세요 Привет
+  with_symbols: '© 2025 Acme™ — All rights reserved ® • ± 0.5%'
+  long_string: 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA middle BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB'
+
+whitespace:
+  leading_spaces: '   leading spaces'
+  trailing_spaces: 'trailing spaces   '
+  multiple_spaces: 'word     word'
+  only_spaces: '     '
+
+url_edge_cases:
+  plain_url: https://example.com
+  url_with_path: https://api.example.com/v1/users/42/posts?page=2&limit=10
+  url_with_fragment: https://docs.example.com/guide#installation
+  url_with_auth: https://user:pass@private.example.com/admin
+  url_with_port: https://localhost:8443/api/health

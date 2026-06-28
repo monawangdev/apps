@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <user id="1" active="true">
+    <name>Alice</name>
+    <email>alice@example.com</email>
+  </user>
+  <tags>
+    <tag>admin</tag>
+    <tag>editor</tag>
+  </tags>
+  <meta>
+    <version>1.0.0</version>
+  </meta>
+</root>

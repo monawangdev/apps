@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Array structures as XML -->
+<items>
+  <item id="1" index="0">
+    <value>First Array Item</value>
+    <type>string</type>
+  </item>
+  <item id="2" index="1">
+    <value>42</value>
+    <type>number</type>
+  </item>
+  <item id="3" index="2">
+    <value>true</value>
+    <type>boolean</type>
+  </item>
+  <item id="4" index="3">
+    <object>
+      <name>Nested Object</name>
+      <count>3</count>
+      <nested>
+        <level>deep</level>
+      </nested>
+    </object>
+    <type>object</type>
+  </item>
+  <item id="5" index="4">
+    <subItems>
+      <sub>Item A</sub>
+      <sub>Item B</sub>
+      <sub>Item C</sub>
+    </subItems>
+    <type>array</type>
+  </item>
+</items>

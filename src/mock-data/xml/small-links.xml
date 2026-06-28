@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <meta>
+    <sizeType>small</sizeType>
+    <contentType>links</contentType>
+    <itemCount>30</itemCount>
+    <generatedAt>2026-04-18T08:00:00Z</generatedAt>
+  </meta>
+  <items>
+    <item id="1">
+      <title>External Resources</title>
+      <description>Collection of useful links.</description>
+      <links>
+        <link href="https://www.example.com" type="primary">Main Website</link>
+        <link href="https://docs.example.com" type="documentation">Documentation</link>
+        <link href="https://github.com/example/repo" type="source">Source Code</link>
+      </links>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+    </item>
+    <item id="2">
+      <title>Social Media</title>
+      <description>Follow us on social platforms.</description>
+      <links>
+        <link href="https://twitter.com/example" type="social">Twitter</link>
+        <link href="https://linkedin.com/company/example" type="social">LinkedIn</link>
+        <link href="https://youtube.com/@example" type="social">YouTube Channel</link>
+      </links>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+    </item>
+    <item id="3">
+      <title>API Endpoints</title>
+      <description>Public API documentation links.</description>
+      <links>
+        <link href="https://api.example.com/v1/docs" type="api">API v1 Docs</link>
+        <link href="https://api.example.com/v2/docs" type="api">API v2 Docs</link>
+        <link href="https://api.example.com/graphql" type="api">GraphQL Schema</link>
+      </links>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+    </item>
+  </items>
+</root>

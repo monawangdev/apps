@@ -1,0 +1,110 @@
+# Kitchen Sink - All YAML features combined
+meta:
+  version: 2.0.0
+  generatedAt: 2025-03-05T10:30:00Z
+  description: "Kitchen sink — every YAML feature in one document 🧪"
+
+primitives:
+  string: hello world
+  number: 42
+  float: 3.14
+  boolTrue: true
+  boolFalse: false
+  nullVal: null
+  tilde_null: ~
+  explicit_string: !!str 42
+  explicit_int: !!int "123"
+  explicit_float: !!float "3.14"
+  explicit_bool: !!bool "true"
+  explicit_null: !!null ""
+
+text_variants:
+  plain: Simple text content
+  with_quotes: 'She said "hello"'
+  double_quoted: "He said 'hi'"
+  unicode: "你好 🌍 éàüñ Блок"
+  escaped: "line1\nline2\ttabbed"
+  empty: ''
+  long: "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+
+literal_block: |
+  This is a literal block.
+  Newlines are preserved.
+  Indentation matters.
+  
+  Multiple paragraphs work.
+
+folded_block: >
+  This is a folded block.
+  Newlines become spaces.
+  Good for long paragraphs
+  that should wrap naturally.
+
+literal_strip: |-
+  Strip trailing newline.
+  No newline at end.
+
+folded_keep: >+
+  Keep trailing newlines.
+  Multiple newlines at end.
+
+
+arrays:
+  empty: []
+  numbers: [0, 1, -1, 3.14, 1e6]
+  strings:
+    - alpha
+    - beta
+    - gamma
+  mixed:
+    - 1
+    - two
+    - true
+    - null
+    - {id: 1}
+    - [10, 20]
+  nested:
+    - [1, 2]
+    - [3, [4, [5]]]
+  of_objects:
+    - id: 1
+      name: "Alice 👩‍💻"
+      active: true
+    - id: 2
+      name: "Bob 👨‍🚀"
+      active: false
+
+objects:
+  empty: {}
+  flat: {a: 1, b: 2, c: 3}
+  with_null: {present: 'yes', absent: null}
+
+anchors:
+  base: &base
+    adapter: postgres
+    host: localhost
+  
+  dev:
+    database: dev_db
+    <<: *base
+  
+  prod:
+    database: prod_db
+    <<: *base
+    host: db.production.com
+
+special_numbers:
+  zero: 0
+  negZero: -0
+  infinity: .inf
+  neg_infinity: -.inf
+  not_a_number: .nan
+  exponential: 6.022e23
+  tiny: 1.6e-19
+
+dates_times:
+  date_only: 2025-03-05
+  datetime: 2025-03-05T10:30:00Z
+  with_offset: 2025-03-05T10:30:00+08:00
+  time_only: 10:30:00
+  date_space_time: 2025-03-05 10:30:00

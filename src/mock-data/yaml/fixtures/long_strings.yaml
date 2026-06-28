@@ -1,0 +1,56 @@
+# Long string values with various block styles
+literal_preserve: |
+  This is a long literal block that preserves all formatting.
+  Each line starts on a new line.
+  Indentation is preserved exactly.
+  
+  Empty lines are kept.
+  
+    Indented lines keep their indentation.
+  
+  The final newline is included.
+
+literal_strip: |-
+  This literal block strips the final newline.
+  No newline at the end of this string.
+  Useful when you don't want trailing newlines.
+
+literal_keep: |+
+  This literal block keeps all trailing newlines.
+  Multiple newlines at the end are preserved.
+  
+
+
+folded_single: >
+  This is a folded string.
+  Newlines become spaces.
+  Perfect for long paragraphs
+  that should flow naturally.
+  
+  Blank lines become newlines.
+  
+    Indented lines are literal.
+    They preserve their newlines.
+
+folded_strip: >-
+  This folded string strips trailing newlines.
+  All on one line when parsed.
+  No newline at the end.
+
+folded_keep: >+
+  This folded string keeps trailing newlines.
+  Multiple newlines at end are preserved.
+
+
+
+very_long_literal: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  
+  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+  Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+  
+  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+ eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.

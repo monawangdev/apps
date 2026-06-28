@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <meta>
+    <sizeType>10kb</sizeType>
+    <contentType>sized-data</contentType>
+    <generatedAt>2026-04-30T00:20:14.792Z</generatedAt>
+  </meta>
+  <items>
+    <item id="1" type="resource" status="inactive">
+      <title>Service Beta</title>
+      <description>Professional service with premium support.</description>
+      <content>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-1</tag>
+        <tag>category-1</tag>
+      </tags>
+      <price>567.31</price>
+      <rating>4.5</rating>
+    </item>
+    <item id="2" type="product" status="active">
+      <title>Item Gamma</title>
+      <description>Essential item for your collection.</description>
+      <content>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-2</tag>
+        <tag>category-2</tag>
+      </tags>
+      <price>297.80</price>
+      <rating>2.5</rating>
+    </item>
+    <item id="3" type="service" status="inactive">
+      <title>Resource Delta</title>
+      <description>Reliable resource for your projects.</description>
+      <content>Duis aute irure dolor in reprehenderit in voluptate velit esse.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-3</tag>
+        <tag>category-3</tag>
+      </tags>
+      <price>883.37</price>
+      <rating>3.1</rating>
+    </item>
+    <item id="4" type="product" status="active">
+      <title>Solution Epsilon</title>
+      <description>Comprehensive solution for your needs.</description>
+      <content>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-4</tag>
+        <tag>category-4</tag>
+      </tags>
+      <price>365.11</price>
+      <rating>1.1</rating>
+    </item>
+    <item id="5" type="resource" status="inactive">
+      <title>Product Alpha</title>
+      <description>A high-quality product for everyday use.</description>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-5</tag>
+        <tag>category-0</tag>
+      </tags>
+      <price>709.52</price>
+      <rating>4.9</rating>
+    </item>
+    <item id="6" type="service" status="active">
+      <title>Service Beta</title>
+      <description>Professional service with premium support.</description>
+      <content>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-6</tag>
+        <tag>category-1</tag>
+      </tags>
+      <price>423.91</price>
+      <rating>3.4</rating>
+    </item>
+    <item id="7" type="resource" status="inactive">
+      <title>Item Gamma</title>
+      <description>Essential item for your collection.</description>
+      <content>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-7</tag>
+        <tag>category-2</tag>
+      </tags>
+      <price>411.70</price>
+      <rating>2.4</rating>
+    </item>
+    <item id="8" type="product" status="active">
+      <title>Resource Delta</title>
+      <description>Reliable resource for your projects.</description>
+      <content>Duis aute irure dolor in reprehenderit in voluptate velit esse.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-8</tag>
+        <tag>category-3</tag>
+      </tags>
+      <price>270.43</price>
+      <rating>1.1</rating>
+    </item>
+    <item id="9" type="service" status="inactive">
+      <title>Solution Epsilon</title>
+      <description>Comprehensive solution for your needs.</description>
+      <content>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-9</tag>
+        <tag>category-4</tag>
+      </tags>
+      <price>103.37</price>
+      <rating>4.5</rating>
+    </item>
+    <item id="10" type="product" status="active">
+      <title>Product Alpha</title>
+      <description>A high-quality product for everyday use.</description>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-0</tag>
+        <tag>category-0</tag>
+      </tags>
+      <price>42.32</price>
+      <rating>2.4</rating>
+    </item>
+    <item id="11" type="resource" status="inactive">
+      <title>Service Beta</title>
+      <description>Professional service with premium support.</description>
+      <content>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-1</tag>
+        <tag>category-1</tag>
+      </tags>
+      <price>159.49</price>
+      <rating>4.2</rating>
+    </item>
+    <item id="12" type="service" status="active">
+      <title>Item Gamma</title>
+      <description>Essential item for your collection.</description>
+      <content>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-2</tag>
+        <tag>category-2</tag>
+      </tags>
+      <price>239.28</price>
+      <rating>3.3</rating>
+    </item>
+    <item id="13" type="resource" status="inactive">
+      <title>Resource Delta</title>
+      <description>Reliable resource for your projects.</description>
+      <content>Duis aute irure dolor in reprehenderit in voluptate velit esse.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-3</tag>
+        <tag>category-3</tag>
+      </tags>
+      <price>860.26</price>
+      <rating>1.6</rating>
+    </item>
+    <item id="14" type="product" status="active">
+      <title>Solution Epsilon</title>
+      <description>Comprehensive solution for your needs.</description>
+      <content>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-4</tag>
+        <tag>category-4</tag>
+      </tags>
+      <price>428.30</price>
+      <rating>3.1</rating>
+    </item>
+    <item id="15" type="service" status="inactive">
+      <title>Product Alpha</title>
+      <description>A high-quality product for everyday use.</description>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-5</tag>
+        <tag>category-0</tag>
+      </tags>
+      <price>578.45</price>
+      <rating>4.5</rating>
+    </item>
+    <item id="16" type="product" status="active">
+      <title>Service Beta</title>
+      <description>Professional service with premium support.</description>
+      <content>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-6</tag>
+        <tag>category-1</tag>
+      </tags>
+      <price>57.20</price>
+      <rating>4.8</rating>
+    </item>
+    <item id="17" type="resource" status="inactive">
+      <title>Item Gamma</title>
+      <description>Essential item for your collection.</description>
+      <content>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-7</tag>
+        <tag>category-2</tag>
+      </tags>
+      <price>679.35</price>
+      <rating>2.0</rating>
+    </item>
+    <item id="18" type="service" status="active">
+      <title>Resource Delta</title>
+      <description>Reliable resource for your projects.</description>
+      <content>Duis aute irure dolor in reprehenderit in voluptate velit esse.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-8</tag>
+        <tag>category-3</tag>
+      </tags>
+      <price>313.05</price>
+      <rating>3.6</rating>
+    </item>
+    <item id="19" type="resource" status="inactive">
+      <title>Solution Epsilon</title>
+      <description>Comprehensive solution for your needs.</description>
+      <content>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-9</tag>
+        <tag>category-4</tag>
+      </tags>
+      <price>172.70</price>
+      <rating>5.0</rating>
+    </item>
+    <item id="20" type="product" status="active">
+      <title>Product Alpha</title>
+      <description>A high-quality product for everyday use.</description>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-0</tag>
+        <tag>category-0</tag>
+      </tags>
+      <price>604.86</price>
+      <rating>1.6</rating>
+    </item>
+    <item id="21" type="service" status="inactive">
+      <title>Service Beta</title>
+      <description>Professional service with premium support.</description>
+      <content>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-1</tag>
+        <tag>category-1</tag>
+      </tags>
+      <price>891.43</price>
+      <rating>0.3</rating>
+    </item>
+    <item id="22" type="product" status="active">
+      <title>Item Gamma</title>
+      <description>Essential item for your collection.</description>
+      <content>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</content>
+      <createdAt>2026-04-30T00:20:14.793Z</createdAt>
+      <tags>
+        <tag>tag-2</tag>
+        <tag>category-2</tag>
+      </tags>
+      <price>649.66</price>
+      <rating>3.1</rating>
+    </item>
+  </items>
+  <metadata>
+    <totalItems>22</totalItems>
+    <generatedSize>10111</generatedSize>
+  </metadata>
+</root>

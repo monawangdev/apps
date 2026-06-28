@@ -1,0 +1,1392 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generatedAt": "2026-04-18T13:48:27.771Z",
+    "targetSize": "0.03MB",
+    "description": "测试用 0.03MB JSON 数据文件，包含用户和产品信息"
+  },
+  "users": [
+    {
+      "id": 1,
+      "uuid": "h63QNILS-QKJk-opQv-LWcl-Xj5O54gsjVx8",
+      "firstName": "Ivy",
+      "lastName": "Johnson",
+      "email": "user1@example.com",
+      "age": 43,
+      "city": "深圳",
+      "company": "AppDev",
+      "salary": 131750,
+      "isActive": false,
+      "joinDate": "2023-06-08T16:00:00.000Z",
+      "bio": "p8kxT7fYJqDTTFayrLptA9ocnYBa8Nm756xPANtyzJvCK8r2KxXI9g1UUY0Du5UrjXAA6S68QxkDQhAMdM8kOhP5u6PuyAnFeFNkQUioy1jwwKzcQCYBOfvA9W2Z9xyDrfRgE9PoLdtalvr9XakFGvb0EXUfJODFRTRl8fUa5yt999pnkTCvwj4qVVZ52OIKTpAKqbrxNVH35IpAHFzexaCAgxOMrPlZnGbyWTgS3xEx9lcrx8JFgffop76y9GuQcM1q2rjWTtpUTqsSzGE6Fabw0DR",
+      "skills": [
+        "Swift",
+        "Swift",
+        "PHP",
+        "PHP",
+        "Java",
+        "Ruby",
+        "Rust"
+      ],
+      "projects": [
+        {
+          "name": "Project Gt7dpV",
+          "description": "7xldc4Ot9NN4uyzjqxDQIEQkU8Vz3fVB52wdCo6qgOO0pq13YVw8Db5Dak8omOgXdkOr6nZ9HfU4CAOd",
+          "status": "pending",
+          "startDate": "2023-02-07T16:00:00.000Z"
+        },
+        {
+          "name": "Project dDWXAi",
+          "description": "3LU5AKUihyFjQwrbSeYbYEbiieIY380V1GxPuKeMwwuKydTPh9C0DoWGEb2q3Se3jKM0fTgyIfWpVuNI",
+          "status": "pending",
+          "startDate": "2023-10-15T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-03T16:00:00.000Z",
+        "loginCount": 311,
+        "preferences": {
+          "theme": "light",
+          "language": "ja-JP",
+          "notifications": false
+        }
+      }
+    },
+    {
+      "id": 2,
+      "uuid": "ctcMo02Y-RfGW-ay8D-iIUs-R8XtMxFgzXVa",
+      "firstName": "Charlie",
+      "lastName": "Brown",
+      "email": "user2@example.com",
+      "age": 33,
+      "city": "西安",
+      "company": "CloudNet",
+      "salary": 72179,
+      "isActive": false,
+      "joinDate": "2023-12-03T16:00:00.000Z",
+      "bio": "bHVitQplhpxHEeWtAx8AA71OiUjkrznpFkRJAFYFo0V5Xnm5TyXyILCjBkErvT6NvQd68pSFcCGOVsbbgukCVyLLXIRNHUybgEba2ydxQMBovbtrINlG0IJVJVrw501nXdj3FADf8U7C48q3NwiTCqwoD2XyMjFf3AL4s76QM5A3KFLBbSGf3dT0rTXsgECvliSbnO5OyecYrHTMQgSRQnXoanEuS29PoM1e9SSpvlG",
+      "skills": [
+        "Swift",
+        "Python",
+        "C++"
+      ],
+      "projects": [
+        {
+          "name": "Project ienMRl",
+          "description": "dj8JLjYtfJ4I4DaCpxuiWCRBVj6uyO170chG4GRYZAiUtGRjtlTjkAgCAgsFAa7GvBvyg1RS1G7mBSIh",
+          "status": "active",
+          "startDate": "2023-12-13T16:00:00.000Z"
+        },
+        {
+          "name": "Project WmmaON",
+          "description": "NcgWh9cYOlLd5uZUJ1VWtTZmpthJ44KbHY8l3JzYcAGad6vTIScdYyNPN9P1mB48IUCejFIRz10fOJUy",
+          "status": "completed",
+          "startDate": "2023-10-31T16:00:00.000Z"
+        },
+        {
+          "name": "Project YPwBL0",
+          "description": "yLKQgCGsEhnPPOrcoXg58is3Nqwo7PMNteNv3XPuy1twKPihXUu4NIpILLaiftGrhzlXR7Som5liHXbu",
+          "status": "active",
+          "startDate": "2023-04-16T16:00:00.000Z"
+        },
+        {
+          "name": "Project eUn1KO",
+          "description": "BspJkIWLi1Y1iIzv4POW9Qd1npjIqwKI9Gi94cbJGqr6NrycD6EgYawnIPsxPm6Fvasu9jWswCCfgWR6",
+          "status": "pending",
+          "startDate": "2023-02-08T16:00:00.000Z"
+        },
+        {
+          "name": "Project Vp0wCY",
+          "description": "j7GRRHFVtjyMe8vulkVStbE2GhhM1hE0GVZNNwuSRbvDX0IEkaQWe7g4UySKy0N4T17GtrDHsMe180Lr",
+          "status": "active",
+          "startDate": "2023-09-05T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-01T16:00:00.000Z",
+        "loginCount": 780,
+        "preferences": {
+          "theme": "auto",
+          "language": "zh-CN",
+          "notifications": true
+        }
+      }
+    },
+    {
+      "id": 3,
+      "uuid": "mPu0V0UA-cEbO-OyHV-8LX3-3FKW5VWuvFNQ",
+      "firstName": "Grace",
+      "lastName": "Brown",
+      "email": "user3@example.com",
+      "age": 34,
+      "city": "北京",
+      "company": "CloudNet",
+      "salary": 95931,
+      "isActive": true,
+      "joinDate": "2023-08-08T16:00:00.000Z",
+      "bio": "HLnDqpNF2RvznNIyueLRxjA0cEVDul2F9wCd8nnsXZLWjSVqen76aTe5Hf83nyLvf8QdSgPWWfYfoJcPNFIjrCHTVNElgjbxK1OI1lTLLqkn8LmvsoXti68NCPs6O2AVOdF1zFVECdTA2zHvht1XBvkcfpMBK3ISngApBLfAuMnbnoHjF2pEp8h2geFC8GTgKoUlI0qHrUmZpHux3gFW6DyHKm88IAEUeCkYy6oEEQNhvMPVxiksXVYcWGzzqITkq1GWKdMrWdOIYoPxNv48zX2j9un1nagzi",
+      "skills": [
+        "Rust",
+        "Java",
+        "Swift"
+      ],
+      "projects": [
+        {
+          "name": "Project YLti5v",
+          "description": "KUrOu3b5EqPX8rYsuRRtraK2QPr5pVvOZeNp4iRHzma7uFXJAj5Ftnqji0IRkD8nsMXWz6euvGb2jxPO",
+          "status": "active",
+          "startDate": "2023-07-22T16:00:00.000Z"
+        },
+        {
+          "name": "Project glwr8y",
+          "description": "4qrUxwSZRJxyy6Xmr7bpMgmoQ1sdlaTVpJARLrGICdiEMkdNHBCpVKX5fjjSwlQw40q1FDkTMqfNn5f9",
+          "status": "active",
+          "startDate": "2023-01-12T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-11T16:00:00.000Z",
+        "loginCount": 881,
+        "preferences": {
+          "theme": "dark",
+          "language": "en-US",
+          "notifications": false
+        }
+      }
+    },
+    {
+      "id": 4,
+      "uuid": "fXmTVLXN-JYIm-sHFU-CdLF-lqRrkuvBkY53",
+      "firstName": "Eve",
+      "lastName": "Jones",
+      "email": "user4@example.com",
+      "age": 31,
+      "city": "南京",
+      "company": "InfoTech",
+      "salary": 116141,
+      "isActive": false,
+      "joinDate": "2024-09-02T16:00:00.000Z",
+      "bio": "qtK8cT1FClHLdAaqnSacXoMZFFs4GRpq2MJRdmZEhN7FPl05LsB99vu2v2DAxAUvQeM9Qy4wnXA4BzqcdNzW0ILpJHxdAf2UnvwnmXtzEPKbumNvwVdZlITokQM",
+      "skills": [
+        "Java",
+        "Java",
+        "Ruby",
+        "Rust",
+        "TypeScript",
+        "Python"
+      ],
+      "projects": [
+        {
+          "name": "Project cE5o1k",
+          "description": "NvXouAU0XDkZsPAtxCfBJ9NXYQa4pIjENpimgn1pLZbdUFpQwqqHX8fR1jt5Xv9Pzo5E1mJV965InG8s",
+          "status": "completed",
+          "startDate": "2023-12-03T16:00:00.000Z"
+        },
+        {
+          "name": "Project kiqE1y",
+          "description": "3nFqlaOefGqQnScY12yL5m7dEQ3StXzOxhUSpffY4NjWg0tZDfKjkwyLo23kuiuPaMfyhgQg1atyt7ii",
+          "status": "pending",
+          "startDate": "2023-01-07T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-16T16:00:00.000Z",
+        "loginCount": 168,
+        "preferences": {
+          "theme": "auto",
+          "language": "zh-CN",
+          "notifications": true
+        }
+      }
+    },
+    {
+      "id": 5,
+      "uuid": "QSakMLHl-52RM-2cpm-zQf0-pjlEpSv1MQKZ",
+      "firstName": "Charlie",
+      "lastName": "Jones",
+      "email": "user5@example.com",
+      "age": 60,
+      "city": "西安",
+      "company": "TechCorp",
+      "salary": 112257,
+      "isActive": true,
+      "joinDate": "2024-01-17T16:00:00.000Z",
+      "bio": "xCfAQrM1qNG4uXM7J0jDTWHkGIxU2fY4cJq7AYkGrMikWlg71a7wxxQMt3I2eS7ezEHtXkFwW9XikdGQ0Zk8ncItV8mpRtKrcExVVtAP6r5cuOYUjvtSVrGZY8VBnCd97x8EkkxBGQAMItRJ9MdWWKox6aCedK4V2I3AFR1lK7h5QVHy07jG1D1VIVZduPA9A2rKVZTNzJOQkaSGJX3YpE2iDTdyDOlm9M7ZZjKxZADHg3ATPCYN3vnN0h20Cd19CnQXV1PCYjOa9TahHyAnFCydnrehm93uemTYI",
+      "skills": [
+        "Java",
+        "Python",
+        "PHP",
+        "PHP",
+        "Ruby",
+        "Rust",
+        "Java",
+        "TypeScript",
+        "Rust",
+        "Python"
+      ],
+      "projects": [
+        {
+          "name": "Project 4n2X0o",
+          "description": "GVSq6xlcVPlKNEJobCJ3dyJxhS1YztoAbM8AKyWbssFZkWyD47amJVSXOSYQxeNTKIXap92WYZXpb4uK",
+          "status": "completed",
+          "startDate": "2023-07-04T16:00:00.000Z"
+        },
+        {
+          "name": "Project qWk9pl",
+          "description": "BPmMcdU4TFX5Rtk6AryoTX2nvYfiviTeNpkEVTCk6LL6MdBysEQ05472iYeytrRi12elmFtRDjSrW1lZ",
+          "status": "completed",
+          "startDate": "2023-11-23T16:00:00.000Z"
+        },
+        {
+          "name": "Project UDAeXZ",
+          "description": "tNlc0ejij4i33gnQniuX8qwtArb36fAGxfCQ3GPajl7UMt4emJNMCNIR4dHwl20WJ96d3rWYny1C3PlG",
+          "status": "completed",
+          "startDate": "2023-09-24T16:00:00.000Z"
+        },
+        {
+          "name": "Project vK7t26",
+          "description": "i9x2KhdbylqeKUh9kuC4TFgTo3OH5TrbGBgcGpvfj48neqrgllbXrnwy5CRIiQ0YVgbt9QxJ6U3vfDSG",
+          "status": "pending",
+          "startDate": "2023-10-23T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-19T16:00:00.000Z",
+        "loginCount": 876,
+        "preferences": {
+          "theme": "auto",
+          "language": "ja-JP",
+          "notifications": false
+        }
+      }
+    },
+    {
+      "id": 6,
+      "uuid": "pCAl6XFa-KZFp-17LX-h0vr-s6lyBeMCrYi4",
+      "firstName": "Henry",
+      "lastName": "Jones",
+      "email": "user6@example.com",
+      "age": 31,
+      "city": "杭州",
+      "company": "ByteWorks",
+      "salary": 145554,
+      "isActive": true,
+      "joinDate": "2020-12-24T16:00:00.000Z",
+      "bio": "miUWFM8f8bygmAVFsUg78gd7pBBmQC8Vj7VP8wZLBtDlfOXDoJEOHvasqjTwramAbRogOsLPRR51EfRehd1ImaAZ9y9KbyAMHYer5bvvMXHOG6R0LrYyC6IT9kdRWy8gHEpFMlwYPN5ZLIHQPqgxSgLIWdXiduX5pcniOPeWpju2guvurVKXybuRnuRW1v4VVJQaTugcQBCrXArtqrb2h1UyRJCivMaGIvcBMjJ68cFRHjUaPTB7gIkw5w5BjoJW0YIGDl",
+      "skills": [
+        "Swift",
+        "Rust",
+        "Python",
+        "Rust"
+      ],
+      "projects": [
+        {
+          "name": "Project BL6pYj",
+          "description": "C4jWr26D3LmiO3PAyC4zXqzr0zwsdHXg5noaRpsea2fvux2qkgvQlywUUm53JBL7z8Q7wOInkYQA3DX6",
+          "status": "active",
+          "startDate": "2023-06-12T16:00:00.000Z"
+        },
+        {
+          "name": "Project HQilV5",
+          "description": "BuCm7KOpOvccHtlMdwwYQYi9nXslrgvOVkeFZvlm12dVIT3tRY21RL1AUliu15a3QYyvmmS6BbsnoAzV",
+          "status": "active",
+          "startDate": "2023-12-01T16:00:00.000Z"
+        },
+        {
+          "name": "Project utlkTX",
+          "description": "6vMVYdmwB89xd0TaDiEHYTKDb83GsCkxtd5foocFGYzahkTOuVzbetvz6zOfb4oKjmuJwLXwnkAy8FkG",
+          "status": "completed",
+          "startDate": "2023-05-25T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-03T16:00:00.000Z",
+        "loginCount": 415,
+        "preferences": {
+          "theme": "auto",
+          "language": "zh-CN",
+          "notifications": false
+        }
+      }
+    },
+    {
+      "id": 7,
+      "uuid": "U5XIe9ty-kyhK-vvRh-qPyc-5Baf3LrDz7kO",
+      "firstName": "Bob",
+      "lastName": "Williams",
+      "email": "user7@example.com",
+      "age": 33,
+      "city": "成都",
+      "company": "DataSystems",
+      "salary": 84391,
+      "isActive": false,
+      "joinDate": "2024-09-17T16:00:00.000Z",
+      "bio": "F2FAehRlCScMVdvAvuHRiEkbrEf1xxTmNBhU5EshVkl6qfkwVOcyP9ISv8mJu3TAKp1eNwYGun81r4aC5eUREsUzuRKSCjhGslTU2V3fc5YTz34rYZd96HPyQOjztp2hLRGzYPfcQUQfedto7DRp1mFpuRyQTZF2Jxx",
+      "skills": [
+        "Go",
+        "C++",
+        "Go",
+        "Rust"
+      ],
+      "projects": [
+        {
+          "name": "Project gM3NUH",
+          "description": "zJMiKXONnUdX3aiB7iUnL47E5yzMK4XANnAZX5s7LVA5gFybuzj0qHAce2sJFIwYwXHKoL3ub1IxBHK2",
+          "status": "completed",
+          "startDate": "2023-03-27T16:00:00.000Z"
+        },
+        {
+          "name": "Project 9TDMxT",
+          "description": "Q8vc0B5Sh29BEH9InJQpJpxp1pu9r6uO0KVT0vGNQuxaYtmyWZ9aLqf8APczuGbTbd7xyloWL4orEWHS",
+          "status": "completed",
+          "startDate": "2023-07-03T16:00:00.000Z"
+        },
+        {
+          "name": "Project F3FwFX",
+          "description": "UIdhfTveD4zDdI7mHbcf8XMjDNTC2m2qM5h1NaRn5uTmixe22BqHnChTtyvXUFmmqb6U9vgTHenPVB0h",
+          "status": "active",
+          "startDate": "2023-04-13T16:00:00.000Z"
+        },
+        {
+          "name": "Project cmRpNz",
+          "description": "31bVNy8Uz6RB0HnZL1Xb8yfNMuJELLm7zU3byUa8PENbSALk0QkwsRY7IlEZBj8nFhuG2SmefQPUYbCl",
+          "status": "pending",
+          "startDate": "2023-09-10T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-03T16:00:00.000Z",
+        "loginCount": 462,
+        "preferences": {
+          "theme": "dark",
+          "language": "zh-CN",
+          "notifications": true
+        }
+      }
+    },
+    {
+      "id": 8,
+      "uuid": "lSkHfwda-5pTs-Odgi-pnbw-e5GHJgmZ0A35",
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "email": "user8@example.com",
+      "age": 26,
+      "city": "西安",
+      "company": "TechCorp",
+      "salary": 118383,
+      "isActive": false,
+      "joinDate": "2020-07-20T16:00:00.000Z",
+      "bio": "vXCq2RrPEkBtVxIowVRs9c404o9xMzOeh4X7h7aVhtCAqyKNZqGyXBNK19wos0Si1dvWnDewnNEXqINgMmiessUy8QnR4XQywbBwmuMLqjUrjyr8RiletRELmePuI1DHO4KUvn3TgMTwED1ZODCvl5t6D6CrftHPhFKfykBLUEqaii28wzR1LuwGUAgs89mCnW6IiW05Ngpc3l6zFAngoxg3hwYCDK4hhsdHZ2HZRJOQm1KacVsC5qfZrSAtsNvxzEbkFp5MtUWdIMWAHD7OM2K6P5HMPN3z",
+      "skills": [
+        "Java",
+        "Rust",
+        "Rust",
+        "PHP",
+        "Rust",
+        "Rust",
+        "Python",
+        "Python",
+        "PHP"
+      ],
+      "projects": [
+        {
+          "name": "Project rBalpU",
+          "description": "tHjZ8JF5gtQd4wrtGqnQZU8TBqQzn9YCi7gjkQ5Dv9C882bh6QxcaitNtdUF7ushjQYN7LXMm5641VYH",
+          "status": "completed",
+          "startDate": "2023-08-10T16:00:00.000Z"
+        },
+        {
+          "name": "Project 8t35n0",
+          "description": "qX0B4sErgARho7qYflwnDnIMdlSy616dbjcjvyW0D9fdzmFrGCVwZ9UlKzzcbWMzWvr3ry8f2lFk4ebq",
+          "status": "completed",
+          "startDate": "2023-07-20T16:00:00.000Z"
+        },
+        {
+          "name": "Project jB4Ifl",
+          "description": "Vokx51CfFbgPV00JaG3CmG4a3ZbWBfzvfXZxnZRjygiPlZcPEKWcpqOZlWMpkIlQeDjZS7gwtHXkBlkv",
+          "status": "pending",
+          "startDate": "2023-06-18T16:00:00.000Z"
+        },
+        {
+          "name": "Project qtJhfz",
+          "description": "wWFauNtmVctjvY9npGJRp7w6zLWonTStLX6mDy2rcFEhzmlnoNpKYIg5YaQIHRsvvoHwlPQQRukZpSN5",
+          "status": "active",
+          "startDate": "2023-07-19T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-16T16:00:00.000Z",
+        "loginCount": 601,
+        "preferences": {
+          "theme": "dark",
+          "language": "en-US",
+          "notifications": false
+        }
+      }
+    },
+    {
+      "id": 9,
+      "uuid": "1XdQmdky-drvK-mG9f-LRvB-Qk2wRE4F9Iiw",
+      "firstName": "Alice",
+      "lastName": "Martinez",
+      "email": "user9@example.com",
+      "age": 40,
+      "city": "武汉",
+      "company": "TechCorp",
+      "salary": 59312,
+      "isActive": true,
+      "joinDate": "2022-09-17T16:00:00.000Z",
+      "bio": "1a5twxiUOuR9nFgei4ASshExbZYIRGWVRCtngbrfSAtZ1JCuRzkU6ZZTJLursJqoKVplXPBmE0Dkh7R0Za3LKacMcePshCDq1GMjupnLSmivfzgCxBlK7PDv9LSa944fhMESQWpRqyP4aP3UpUpIAIdx9kNNpMZxbqf",
+      "skills": [
+        "JavaScript",
+        "Rust",
+        "Ruby",
+        "Go",
+        "Java",
+        "TypeScript",
+        "PHP",
+        "Java"
+      ],
+      "projects": [
+        {
+          "name": "Project iAn1PN",
+          "description": "hOYlAee3BqQfo55mdsTGVWUNeIw3Ccj5p6lSFNtpCtuAAXB4GVPIJCjShgdb5N5gBWVuUAxuN8vvcoB7",
+          "status": "active",
+          "startDate": "2023-12-24T16:00:00.000Z"
+        },
+        {
+          "name": "Project WnfVir",
+          "description": "3bOcFaK64vV0HiWLq9JxoUaVy739hehBmuDNMlEx40pnW8xgF2ecyCnwZAsKM5x515OvImAFah0eqJCT",
+          "status": "active",
+          "startDate": "2023-01-07T16:00:00.000Z"
+        },
+        {
+          "name": "Project if2LuH",
+          "description": "JOwjVVOuFzYxBoK87HSQ22MevM0DNGGFgqR9mVqQwlcdQomH6QZDkCbSvNAx9RceynID38SM0UWHfv9x",
+          "status": "active",
+          "startDate": "2023-04-05T16:00:00.000Z"
+        },
+        {
+          "name": "Project pXC3H5",
+          "description": "Wu10F2eBAyqCAqLluv9nZzKx82EB32SMh9rqKuLNBpE5AxTtiQiTCW61emuD5g55tlJAmUUbOJSGrUSI",
+          "status": "active",
+          "startDate": "2023-04-04T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-13T16:00:00.000Z",
+        "loginCount": 152,
+        "preferences": {
+          "theme": "auto",
+          "language": "ja-JP",
+          "notifications": false
+        }
+      }
+    },
+    {
+      "id": 10,
+      "uuid": "uCLNouiC-Vl22-BCjL-YtbK-IOdC3F9m8cOT",
+      "firstName": "Diana",
+      "lastName": "Williams",
+      "email": "user10@example.com",
+      "age": 56,
+      "city": "深圳",
+      "company": "AppDev",
+      "salary": 76965,
+      "isActive": true,
+      "joinDate": "2022-08-05T16:00:00.000Z",
+      "bio": "nKiBNsUTtud1gx8qwOoeBzQvg5rHf0WwmWdFk2kMJThzQ9EALO3ESkXh1Sg5Dp0KqXA6TVAOEecbuCnxDkaDGOxOJub948AoHZBEllCgNFQKY8BzzfyMgVnQTJNm7pgGCyCFgiRo4D47B2ttTOTjekEEWQL0G5u6kjZBC57OAOKo7CNULTDLZsbP1LQCSrzXiNHppSj1xuVPYJO6qJuJE6pcOyx3ruaarahqRehTZ",
+      "skills": [
+        "C++",
+        "TypeScript",
+        "Go",
+        "JavaScript",
+        "Go",
+        "C++"
+      ],
+      "projects": [
+        {
+          "name": "Project xkn5fa",
+          "description": "xXFGt8UDTXd5cBfZ28tit4Gf26E58bYpyv2tDc4aTFSB656bbxCm3MZz1gJVoHIsqvDIYGCmbXXAU1qz",
+          "status": "active",
+          "startDate": "2023-06-09T16:00:00.000Z"
+        },
+        {
+          "name": "Project x0JJH2",
+          "description": "NT2zitMIflFIdV1K7nPS3kCwWzlzloPUyIjGxAuBsmr0v0BRdDGtyQswZyIydoCIMLCUnOrPxCq6Ggsq",
+          "status": "pending",
+          "startDate": "2023-10-27T16:00:00.000Z"
+        },
+        {
+          "name": "Project 23nPoI",
+          "description": "1tdldHEZBPQb1zxlVD0tokMVoRvBOuSCTyTxqbpHqUMNxfQTRHQT08GLmNj5jYyRR0DwkoEsq2GrXDWw",
+          "status": "completed",
+          "startDate": "2023-08-16T16:00:00.000Z"
+        },
+        {
+          "name": "Project 16CJrS",
+          "description": "uyZQjJ5anQ9wnV1LcWJLDJaX3xw9MzYlg3sVYvSez5vN5XL0n5is5yhwTq5rnCMuERHTZYRO7v9eUkZk",
+          "status": "completed",
+          "startDate": "2023-09-25T16:00:00.000Z"
+        },
+        {
+          "name": "Project yp2a0T",
+          "description": "XkHdmEn6USZz7maOKaFBwQICc0MwTc7C3L58FM7K06nqJkF3WhzHlCMpX0HOKfr56agx9WPk2UgSoCEv",
+          "status": "completed",
+          "startDate": "2023-04-23T16:00:00.000Z"
+        }
+      ],
+      "metadata": {
+        "lastLogin": "2026-03-15T16:00:00.000Z",
+        "loginCount": 305,
+        "preferences": {
+          "theme": "dark",
+          "language": "en-US",
+          "notifications": false
+        }
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "sku": "SKU-ZZFSZBKRGM",
+      "name": "产品 NZuIwdFt",
+      "category": "食品",
+      "brand": "品牌A",
+      "price": "167.57",
+      "originalPrice": "414.03",
+      "stock": 570,
+      "description": "iXnHtOOYKY4gIDrxX38SAT1xWAPKn3CqsUAnZmfL3D7ElK0wr3aLFtg4uJFbA58uQp1n9ANPdbBOpdAYMZTBRqbQNr0fRfFmGI5qcGc8EezpgMSzOf8bexS4i6vSKwNMQSgdFiKxGQLpvQUtQtwJOpargJYRjOkZMdZvQKzjpeTUPpmzzQFLDdIpHyBpBIcd6GOpCXub5Bb0XLl8qRWt0PKns1kCSKbYZ3M3wHkH",
+      "features": [
+        "hPFt7AGUQlzQ3K1XIH5hufkidMv7LJxZyIcuqInB",
+        "mmQrpu0CpduOyhllojro0j4dhOvoM7GBXI1RRje5",
+        "gKU5AaUIc7iFZwChgmOVH5tWw4XvoMGKdfYl6BhT",
+        "AYfmMJ84E6gL5OBBHcEc70d3etHeMB1htKQsqQbr",
+        "YXfVunXQYqBaR7k5h9NdfVtmNuVkB8BtIjFHzDE6",
+        "2TSrLv07ZSJJ8w28PqF2kpUeEPVg4eGU1PFGojrg",
+        "0MlBr7bXqMZ7CqZTHNBcvNFIEfryvY7RdsKl6IRt",
+        "Kef6dDNVAjG3tBbyQgWuKBGkzAWKiro52TTUxyJP"
+      ],
+      "images": [
+        "https://cdn.example.com/products/YWrsqj6qH3qn5dm1.jpg",
+        "https://cdn.example.com/products/g9NY80qBv70pERaf.jpg",
+        "https://cdn.example.com/products/fuEdYzd5KOSqZ2vB.jpg",
+        "https://cdn.example.com/products/u5lVCkgj4VILRmZ4.jpg"
+      ],
+      "rating": "3.1",
+      "reviewCount": 1941,
+      "tags": [
+        "S4P8Nw7W",
+        "1SwhUsGU",
+        "n3f4qfZT"
+      ],
+      "specifications": {
+        "weight": "4.47kg",
+        "dimensions": "59x10x30cm",
+        "color": "白色",
+        "material": "1Oc1iNpB3CjWfirZOAjs"
+      }
+    },
+    {
+      "id": 2,
+      "sku": "SKU-VKXHUERJK4",
+      "name": "产品 mBV7JNkM",
+      "category": "图书",
+      "brand": "品牌B",
+      "price": "608.06",
+      "originalPrice": "380.90",
+      "stock": 664,
+      "description": "QNNc9iFooTwUpuQO05CprBqlpfMTeZfzmeM5SuL9TuJ03E9LLfQwY0CqSmAHFSMXGtUpf8itjeqfSPAYWNS1l23ICzf1D6tnvro5wz9FelPkspd0uI7ZjozhCf6S73SvWWVRbgMAGaIrUcfU12DFZAuzOAFTplq",
+      "features": [
+        "5m95N3tQXU9qcllIgxth1PREoToa4tOpW9C6JPGV",
+        "XMVm4FPQhOgNXCP7IKkYtuzFft7CIw7KxybdQ6l5",
+        "kYaU0AE8EzAv1LGl6ak1LBbeugrAhaGQMwwaBfeK",
+        "a3a1nCJpypsyd1kRSIaPp31K399l08INKLwMhJ8i",
+        "pBzRRHAIC7NXqoI0cZb3mhBAqUhyphxakh14jJ8a",
+        "rY0224YOIth46cNKUvTmdhQvvfzwrEr7s0DwrzbU",
+        "6GVtnfM5cunqo4NcEZbOohB4eLCGEzk4Nu57Vyjq",
+        "7DEqECMi7m09OTpDWYcHq9ELlWvPzgmeYsI89lDG"
+      ],
+      "images": [
+        "https://cdn.example.com/products/I2jRqyl3Z2zoZaLl.jpg",
+        "https://cdn.example.com/products/u5Gsy8P3WABL9AzJ.jpg",
+        "https://cdn.example.com/products/DcKgqPR94ocwHdnk.jpg",
+        "https://cdn.example.com/products/qTmPX3TCgNTbRe9C.jpg"
+      ],
+      "rating": "3.4",
+      "reviewCount": 4050,
+      "tags": [
+        "P4GobWLS",
+        "svIP1qGc",
+        "K4Lj2Z93",
+        "ag6e6AWu",
+        "dyeDDpCq",
+        "Iq6Jf8Zm"
+      ],
+      "specifications": {
+        "weight": "1.68kg",
+        "dimensions": "55x22x58cm",
+        "color": "蓝色",
+        "material": "H4bqK8LXFGztTmXmlIMM"
+      }
+    },
+    {
+      "id": 3,
+      "sku": "SKU-627AHNMNXF",
+      "name": "产品 wKXeKjIz",
+      "category": "服装",
+      "brand": "品牌D",
+      "price": "249.96",
+      "originalPrice": "894.98",
+      "stock": 863,
+      "description": "pvA96uWasinjWIQgO2ILZ5yYiQCcTu8NxWZU0xwOnalmcqcOu9EINHFmnNh4uxJfVJE8fgbMvlxj5MUrQI4nJdc6xvBg8zvDsU6kQT5VhWWfRJf3TAS0fCqzDLKmteAmAU7O6Js3BwnvRcts8ny7n9jBUAXniyiHQHAWuJEzdLOi3DLDDi6zBuvYbKOaw",
+      "features": [
+        "7mtpd3vPPVdRklKjajShvzPaRfJfsis7kAppHEki",
+        "UtYSPqgKaWPh83Zw4tBBVtvtuV5OL1X8Ls0W3IXo",
+        "pK42sF3Bs9yw0ZTqqVj2QjHMPSse1fWzA2NvZVcz"
+      ],
+      "images": [
+        "https://cdn.example.com/products/HbU6BxP6db93SmE4.jpg"
+      ],
+      "rating": "4.6",
+      "reviewCount": 667,
+      "tags": [
+        "I3JXyGdQ",
+        "Pl6Xmv7j",
+        "SyrcqU4b",
+        "ys7RdbrA"
+      ],
+      "specifications": {
+        "weight": "4.35kg",
+        "dimensions": "50x41x33cm",
+        "color": "黑色",
+        "material": "E4psolABiHc1Sp3Vso6d"
+      }
+    },
+    {
+      "id": 4,
+      "sku": "SKU-CWODAXGEHB",
+      "name": "产品 eKhycdpp",
+      "category": "运动",
+      "brand": "品牌B",
+      "price": "177.63",
+      "originalPrice": "849.33",
+      "stock": 986,
+      "description": "UX7aAs4J9qNJafLqSOmkFryh2G8aIfB8pNuXJwXEWvgdjXvWuuIchIdYYdwirm5B3uShpGXKBkNifkhCaaY30qYzgDwNzP2noVGjApUEnzZ8t8KmEDOSmvPZrVKLn1IdyeCriPP5tfzjkHJx8cHU6a9XcwQRGRbOBxy5vNzimL4l9cdHwHDwPGNM83gDz218V3MiexGnLYrv4MYli8Pj0F3N8DtLxK6Z7Y464ISt6VmxAdcJZ10btAuE",
+      "features": [
+        "cy9hpAwqOAITuKlz2s0x7IRc9RhKhPrSdNnW64PA",
+        "Ex0za3V6PAXKpHTlddKXJRQ1Y3zpCJplluEVXagc",
+        "FSHNO15CK9UK4QokIyIBgF6hFS1CK2hpjdk99C8R",
+        "upGIzcEGVFVhVFk4WnHUJm7MmENvCZ7OjiZs5IJm",
+        "ywh4A4KKu8sX5oj77hY1KssdXmnR0Jb73ShEVFhB",
+        "mvU29DPHdyaaeOTrCebrb0XOmUETrunAOge22gy4",
+        "ZPbMW5LZkGfQFkktXKu1H3HmHKkHekWg8I3fE9Am",
+        "oHaxQIgGBkPdd9gS4aIog8pb31NI8vJf0narIrnb"
+      ],
+      "images": [
+        "https://cdn.example.com/products/xQIbgu5cPdpCVpir.jpg",
+        "https://cdn.example.com/products/jhyrgESPDbpchZnh.jpg",
+        "https://cdn.example.com/products/uSz32XHTfZOKJlyP.jpg"
+      ],
+      "rating": "3.5",
+      "reviewCount": 4149,
+      "tags": [
+        "NlWZkdjt",
+        "vobNxMrd",
+        "dwfv4MES",
+        "qyqxtJJI"
+      ],
+      "specifications": {
+        "weight": "1.81kg",
+        "dimensions": "38x22x13cm",
+        "color": "白色",
+        "material": "LVtqlYab1f8ZkVCgcYS4"
+      }
+    },
+    {
+      "id": 5,
+      "sku": "SKU-0M7GGF97IG",
+      "name": "产品 6j3oCidW",
+      "category": "运动",
+      "brand": "品牌D",
+      "price": "443.16",
+      "originalPrice": "1212.25",
+      "stock": 94,
+      "description": "o4tETTesn311aUEmTQtpTv388X8YmlnNe112zRQjnbKVkK6niRMWcVpuwkY5J6Z7hKfyV5vXbC3vVuIYOIGevBT1NhHJXsEBFWSyx7ghHsYZ797dNxVxX66FMPIaneWnhpMSgTABybJAiJg37f9qEsnYXksYlZ5",
+      "features": [
+        "2IJrmAmOhSD8muFZ0PafK8uLKnZmoIsjWpk9dOr0",
+        "YdmwvOKlS5wAkHv8fJY8KtBbGCFgJy4l5JtVrFST",
+        "Wl9NZAJ1jJPYt2pC7xcChIYCOPavoUlER9x9yQrw",
+        "TUKsMqxJSEZDLFFu8M1TECNOi7yKpSsg9iLJGZ9N",
+        "lRp9pt4FD90RrZD44h7ZgwaW1ll4vXJ3FCITxJYZ",
+        "zlvEgwnT0TTNbZ3rufCF7eZHhKl8JJrZ4fMyVqpX",
+        "U5VNxFxrEC0jRxXy18LxKfZSmDhD1Zk6UjUBSKeJ",
+        "P27XI3mkebzRDNAdQ5yVdSoky1yRGGHthuDG2KQm"
+      ],
+      "images": [
+        "https://cdn.example.com/products/Esgclk7p7vfxTeql.jpg",
+        "https://cdn.example.com/products/aIPY5r2zuX0uWh7N.jpg",
+        "https://cdn.example.com/products/QDmqBuZcKO7CFOE8.jpg"
+      ],
+      "rating": "4.5",
+      "reviewCount": 3815,
+      "tags": [
+        "Go47tPgv",
+        "bc5deJZd",
+        "GMaiIgQ9"
+      ],
+      "specifications": {
+        "weight": "1.73kg",
+        "dimensions": "44x33x21cm",
+        "color": "白色",
+        "material": "MnLOVPlwTjV2IYZzKRiJ"
+      }
+    },
+    {
+      "id": 6,
+      "sku": "SKU-LLK84VNCF0",
+      "name": "产品 U7PRU5CK",
+      "category": "美妆",
+      "brand": "品牌D",
+      "price": "312.12",
+      "originalPrice": "736.61",
+      "stock": 585,
+      "description": "iu2BJKj9O01SeKEgmBmb7V8YhO0wg1I9BzKkH50K153s1oikFfm8GqJXnl0ADbVC3Tk07557dgzA0FF81rdEVHfaaVegNinDYxQb37xHTe5ZyHUwNr5rp6dXAB2Ro9rJRQAArocU2UIptSgK20vlOVJJyp4MZLxSx5ho0ZN1DtXtK6uTMS44FhYXVh7ZlZqD2YSoxVKba1WbU4jJDr1kVSOnznEJ9EiAvRbXL59ypXRCgy4HxOhZpTMYKJ4dEOm8GvZXhveE2oXG5phnHO6NaRbT",
+      "features": [
+        "PC3Ef19BdimNoRz1GkPkQHheWAhbhJhhkSpQzDcS",
+        "87iwhIm1Z7kmBIgKHCOZza8iU8L2aFZSl5Fs5MWw",
+        "DCsghAvJumGZPsn8Ol6LSnJuMJG13eN6Ekez9k4C",
+        "qOjqdQJTaQBXpRH8xTdiNFV49yvlH78K0JKZORZ9",
+        "mVrKXOyD085bGsCGk4OHs4V6QFjYocTrNzAzur0b",
+        "CHuxKb8XsdEB32TjD31RGSSFbT9PHQdkDQZtOxez",
+        "6oXrvJShNJPljNbULrx7rf9MwD01STlrLm1mwqpr"
+      ],
+      "images": [
+        "https://cdn.example.com/products/3d2JXzh0biBIGcj0.jpg",
+        "https://cdn.example.com/products/xGg3hmMool8iLtYq.jpg",
+        "https://cdn.example.com/products/U4MGlM1uWMjdJv7Q.jpg",
+        "https://cdn.example.com/products/wyJl6okrIY0NtBFP.jpg"
+      ],
+      "rating": "4.9",
+      "reviewCount": 3234,
+      "tags": [
+        "L0txZBLz",
+        "uMSMKSle",
+        "VjRNSoHa",
+        "g07YjXJg",
+        "OBYo8O75"
+      ],
+      "specifications": {
+        "weight": "0.36kg",
+        "dimensions": "44x24x40cm",
+        "color": "黑色",
+        "material": "vPiBuYZ1AWoYCeBYMMz0"
+      }
+    },
+    {
+      "id": 7,
+      "sku": "SKU-PZJLDR9GRD",
+      "name": "产品 Y2L1tgz9",
+      "category": "服装",
+      "brand": "品牌E",
+      "price": "931.75",
+      "originalPrice": "922.73",
+      "stock": 322,
+      "description": "3ARrgVOFpB9dPfTOdvI2xIavAiSPHJZVrFmNk6w12gXFnRrRO4u4qowVLoNPQEqeJkohKVZSmv2ZqfBxjZvYntM0U6SFzvVjJzp2sdxCEc8jEtgaD7z4cEbqBSmEEPoLvNKEs5pB4dMy1OLYf2SbVDwheul5M179rGC1kNhTEzIWsTe41lW07msTTzvcBlPRdej0gRUik2PIzckQCzVhbLm5dTdCYYbj8pJO78AO8Vp6dnIyypAcocMbYCHL8bWlEJZ3vGoWh1xNfM7I0Q63zJzjkX2wgjTACAxEVp4",
+      "features": [
+        "OW7kMX75k2nLYbIL0ujjBPum2IAtWgVxfglaxi0g",
+        "2za3HtBR9udM3ynQ6d2Qm6nksJfzwQ0sPndgKOpa",
+        "lZzKc9RJ1tPAFyatr5jKaxndoD76Juv1DFsRo8OB",
+        "YezcxNYZnrjjvTxsB1GQFu6Xgjseunqdp60E2UAe",
+        "TE37PgYWDnxBzelS6LiasURiF8mloZZ07LlK2Q7y",
+        "vpzABpx9rzwQDxM0gxPnJpRtPFq6r0OahON3UVqG",
+        "3FSh6yrIflY2DyjEyMB94hC9Ym9Ze216nNmMUHEf"
+      ],
+      "images": [
+        "https://cdn.example.com/products/m761V5anvMoLy3Hs.jpg",
+        "https://cdn.example.com/products/ivlyBxLzKXI9LhZH.jpg",
+        "https://cdn.example.com/products/UXWzTnAw4L8b7JbR.jpg",
+        "https://cdn.example.com/products/qwcvr9Nsapnmcgto.jpg",
+        "https://cdn.example.com/products/kmMwJvvcD76voDJD.jpg"
+      ],
+      "rating": "4.1",
+      "reviewCount": 1520,
+      "tags": [
+        "WJvYrFiI",
+        "BA20v5Av",
+        "pWa08yqS"
+      ],
+      "specifications": {
+        "weight": "2.14kg",
+        "dimensions": "33x10x10cm",
+        "color": "白色",
+        "material": "bqvfCMVxuYtlB55sJUkd"
+      }
+    },
+    {
+      "id": 8,
+      "sku": "SKU-KF7WV05D2T",
+      "name": "产品 SMiTdz2S",
+      "category": "美妆",
+      "brand": "品牌B",
+      "price": "239.06",
+      "originalPrice": "1176.72",
+      "stock": 905,
+      "description": "4d3s74WfAglSeXiIStznQFt9mafLNtf8cdgLWeAUHMTb6KmfdqJX77UlcFtGR1i2uB9v2UsILbi3v2AtUXXj36NYexoB6h9P3X9CpXihNiuDIpga6gdlEaNb3BnBdwsOuczzGqkKw0A50jcYjxsu9ZsVQ2v8C10fnvbCKJdhWeKyF3cETOT",
+      "features": [
+        "USGXZAc6iZAVG9oanYJCoZ9P7Nq8Pb3PMoGCjvbv",
+        "S7bitKZxbzLa6MdoOxUmDUBEZS0BUyWxfKOilkKy",
+        "Rv5GE0mxSIkuLcMSH03b1aay4tZyFgg0GS0fRvzC",
+        "bz5W41WuSA6dS00JRTbEbMi3HgRV7YtgMeL9ejLX",
+        "qJCcansTlAImjiiNlTLlqSvw5kTIJviFaveAQDTE",
+        "FTNh7a6xj5S2qLQ7T1ud3v9Kl5blYO1dbWlVPRfM",
+        "qlzislNOQ9FTKz7KjWH5I0dFUiADFwpVDXg6ysTv"
+      ],
+      "images": [
+        "https://cdn.example.com/products/pPX0RfwVTOYPJtQi.jpg",
+        "https://cdn.example.com/products/rOQzVi1mkkjqoeEz.jpg"
+      ],
+      "rating": "4.0",
+      "reviewCount": 964,
+      "tags": [
+        "3BtXfO53",
+        "0a5Sp5WJ",
+        "agA4PdIp",
+        "29XlDS58",
+        "2T4RvESC",
+        "TIRLzG92",
+        "9TUBcUmo"
+      ],
+      "specifications": {
+        "weight": "0.56kg",
+        "dimensions": "10x37x45cm",
+        "color": "黑色",
+        "material": "DwB8HGNeBuCxtrwirVHm"
+      }
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "userId": 2,
+      "productId": 3,
+      "amount": "837.69",
+      "status": "cancelled",
+      "timestamp": "2026-03-02T19:14:00.000Z",
+      "paymentMethod": "wechat_pay",
+      "shippingAddress": {
+        "street": "pKEh7SZCT7usfW5xPKd219louFmn6T",
+        "city": "上海",
+        "zipCode": "705787"
+      }
+    },
+    {
+      "id": 2,
+      "userId": 10,
+      "productId": 8,
+      "amount": "968.70",
+      "status": "cancelled",
+      "timestamp": "2026-03-05T14:21:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "pt2nUuOiS8DtNyFCqzMhCbRg5TRFP5",
+        "city": "广州",
+        "zipCode": "768621"
+      }
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "productId": 6,
+      "amount": "893.55",
+      "status": "cancelled",
+      "timestamp": "2026-03-21T11:26:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "AbqF157bpFd6Lpur4AKPcTdoYdSslP",
+        "city": "上海",
+        "zipCode": "425013"
+      }
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "productId": 2,
+      "amount": "307.66",
+      "status": "cancelled",
+      "timestamp": "2026-03-08T16:38:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "T4DlSqi9MgXqHqwJYQaLNnEZLqX1C2",
+        "city": "北京",
+        "zipCode": "830478"
+      }
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "productId": 7,
+      "amount": "593.84",
+      "status": "cancelled",
+      "timestamp": "2026-03-08T08:55:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "ft3wdyxeqaCo40JDm04cYtLBsw4YZS",
+        "city": "上海",
+        "zipCode": "879699"
+      }
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "productId": 1,
+      "amount": "1004.56",
+      "status": "cancelled",
+      "timestamp": "2026-03-01T11:36:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "HIASYygkdzgZVwlPwoI1at3y0wOHqE",
+        "city": "上海",
+        "zipCode": "531981"
+      }
+    },
+    {
+      "id": 7,
+      "userId": 4,
+      "productId": 8,
+      "amount": "1001.29",
+      "status": "pending",
+      "timestamp": "2026-03-07T00:08:00.000Z",
+      "paymentMethod": "credit_card",
+      "shippingAddress": {
+        "street": "KwBoBCEjPk6SsNwpMpY1IyC0fP9EjU",
+        "city": "北京",
+        "zipCode": "421519"
+      }
+    },
+    {
+      "id": 8,
+      "userId": 4,
+      "productId": 5,
+      "amount": "967.34",
+      "status": "cancelled",
+      "timestamp": "2026-03-11T06:23:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "7BlAc7KhNa2gTrjS6bkNL0gcEMAF7v",
+        "city": "深圳",
+        "zipCode": "943159"
+      }
+    },
+    {
+      "id": 9,
+      "userId": 4,
+      "productId": 2,
+      "amount": "298.13",
+      "status": "cancelled",
+      "timestamp": "2026-03-03T06:48:00.000Z",
+      "paymentMethod": "wechat_pay",
+      "shippingAddress": {
+        "street": "4ZQKwJcYCybUjJg3e6D2Jw6DUwjUWQ",
+        "city": "上海",
+        "zipCode": "504376"
+      }
+    },
+    {
+      "id": 10,
+      "userId": 5,
+      "productId": 7,
+      "amount": "583.06",
+      "status": "cancelled",
+      "timestamp": "2026-02-28T16:12:00.000Z",
+      "paymentMethod": "credit_card",
+      "shippingAddress": {
+        "street": "o6czX5EdCJdOFjWKq2rjBv5WUMEEa3",
+        "city": "深圳",
+        "zipCode": "284803"
+      }
+    },
+    {
+      "id": 11,
+      "userId": 5,
+      "productId": 3,
+      "amount": "276.88",
+      "status": "pending",
+      "timestamp": "2026-03-02T10:46:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "ro6m4oSfgCsXCu3LEGWvgfAGK8rlMh",
+        "city": "广州",
+        "zipCode": "380134"
+      }
+    },
+    {
+      "id": 12,
+      "userId": 6,
+      "productId": 2,
+      "amount": "782.17",
+      "status": "completed",
+      "timestamp": "2026-03-05T21:18:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "GynP1A95GKyRCiLwNfWMV7qo3FLOos",
+        "city": "北京",
+        "zipCode": "577425"
+      }
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "productId": 6,
+      "amount": "407.41",
+      "status": "pending",
+      "timestamp": "2026-03-01T12:12:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "wxgcnqtqVJ5rUao1TlRWOgGwWWw5ul",
+        "city": "广州",
+        "zipCode": "998044"
+      }
+    },
+    {
+      "id": 14,
+      "userId": 3,
+      "productId": 1,
+      "amount": "348.45",
+      "status": "pending",
+      "timestamp": "2026-03-16T09:49:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "WzRhrLJdF4f2q5CzmSaKJHqDOFtrNN",
+        "city": "上海",
+        "zipCode": "667817"
+      }
+    },
+    {
+      "id": 15,
+      "userId": 1,
+      "productId": 0,
+      "amount": "160.27",
+      "status": "pending",
+      "timestamp": "2026-03-19T00:56:00.000Z",
+      "paymentMethod": "wechat_pay",
+      "shippingAddress": {
+        "street": "d8VdXRc4K1UqcjZt3aV9tir3wbQ1vh",
+        "city": "上海",
+        "zipCode": "103096"
+      }
+    },
+    {
+      "id": 16,
+      "userId": 7,
+      "productId": 7,
+      "amount": "645.09",
+      "status": "pending",
+      "timestamp": "2026-03-19T08:39:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "AvGZNeqzAs6TlffWwEtz8ruVmRj2K1",
+        "city": "上海",
+        "zipCode": "513799"
+      }
+    },
+    {
+      "id": 17,
+      "userId": 7,
+      "productId": 8,
+      "amount": "815.35",
+      "status": "completed",
+      "timestamp": "2026-03-11T08:50:00.000Z",
+      "paymentMethod": "wechat_pay",
+      "shippingAddress": {
+        "street": "VRMz5PRUDyvwLZYkhpm11kZxbYDRPI",
+        "city": "广州",
+        "zipCode": "505702"
+      }
+    },
+    {
+      "id": 18,
+      "userId": 0,
+      "productId": 2,
+      "amount": "963.12",
+      "status": "pending",
+      "timestamp": "2026-03-05T14:40:00.000Z",
+      "paymentMethod": "wechat_pay",
+      "shippingAddress": {
+        "street": "zcSqR4matVfXBCgOEPnr1UKSr0ZF1a",
+        "city": "广州",
+        "zipCode": "151910"
+      }
+    },
+    {
+      "id": 19,
+      "userId": 5,
+      "productId": 7,
+      "amount": "362.60",
+      "status": "pending",
+      "timestamp": "2026-02-28T17:50:00.000Z",
+      "paymentMethod": "wechat_pay",
+      "shippingAddress": {
+        "street": "7mVjPh4xAaruFLqo58apYj6O4sxAZp",
+        "city": "广州",
+        "zipCode": "834124"
+      }
+    },
+    {
+      "id": 20,
+      "userId": 10,
+      "productId": 6,
+      "amount": "27.25",
+      "status": "completed",
+      "timestamp": "2026-03-18T15:30:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "VIv1xA6IN6nxtqi1Z5TbpeOruHV4tF",
+        "city": "广州",
+        "zipCode": "621883"
+      }
+    },
+    {
+      "id": 21,
+      "userId": 2,
+      "productId": 8,
+      "amount": "72.34",
+      "status": "cancelled",
+      "timestamp": "2026-03-05T22:34:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "GV0LpTGqIKvSTHPeCM9343qhvPt05B",
+        "city": "深圳",
+        "zipCode": "103914"
+      }
+    },
+    {
+      "id": 22,
+      "userId": 8,
+      "productId": 2,
+      "amount": "872.41",
+      "status": "pending",
+      "timestamp": "2026-03-15T05:46:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "36VB5cp1WRjmaTQTL7LP1aKsHG6TYf",
+        "city": "深圳",
+        "zipCode": "567741"
+      }
+    },
+    {
+      "id": 23,
+      "userId": 7,
+      "productId": 7,
+      "amount": "913.21",
+      "status": "pending",
+      "timestamp": "2026-03-05T23:03:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "2BwVgYgCdwBDoyls9bQHS2DYZCYcaB",
+        "city": "北京",
+        "zipCode": "477260"
+      }
+    },
+    {
+      "id": 24,
+      "userId": 4,
+      "productId": 6,
+      "amount": "823.92",
+      "status": "pending",
+      "timestamp": "2026-03-14T08:59:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "cbiQPECfiy3zjyr3VetEzXX8JVjUZl",
+        "city": "上海",
+        "zipCode": "755250"
+      }
+    },
+    {
+      "id": 25,
+      "userId": 8,
+      "productId": 7,
+      "amount": "745.26",
+      "status": "cancelled",
+      "timestamp": "2026-03-18T23:07:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "BTiLG2Uj9786TOzNj2wYM62vbWmCpD",
+        "city": "上海",
+        "zipCode": "781002"
+      }
+    },
+    {
+      "id": 26,
+      "userId": 6,
+      "productId": 6,
+      "amount": "314.77",
+      "status": "cancelled",
+      "timestamp": "2026-03-14T05:32:00.000Z",
+      "paymentMethod": "alipay",
+      "shippingAddress": {
+        "street": "c7y8FXayliBcvgPjWF1ocsDJq8P1Y7",
+        "city": "上海",
+        "zipCode": "216490"
+      }
+    },
+    {
+      "id": 27,
+      "userId": 7,
+      "productId": 7,
+      "amount": "1004.18",
+      "status": "completed",
+      "timestamp": "2026-03-11T22:51:00.000Z",
+      "paymentMethod": "credit_card",
+      "shippingAddress": {
+        "street": "uoIxixxwN2EAdFqPfEM7OpXuP5BFh6",
+        "city": "北京",
+        "zipCode": "365251"
+      }
+    },
+    {
+      "id": 28,
+      "userId": 0,
+      "productId": 7,
+      "amount": "989.43",
+      "status": "pending",
+      "timestamp": "2026-03-09T01:13:00.000Z",
+      "paymentMethod": "paypal",
+      "shippingAddress": {
+        "street": "pEOczDOaOKP5CO9wSMGJ8YV7uUlJVk",
+        "city": "上海",
+        "zipCode": "169104"
+      }
+    }
+  ],
+  "logs": [
+    {
+      "id": 1,
+      "level": "WARN",
+      "message": "CJ3kCuwxbyc6Fqk5eOcmzEtxVPbpJ5y5O1nShAAQZWMPELJsvogKc3j5TkwAhWIkGnDKBKc4ZtHKKbA8vEy8BgdYzXD0x74ezpdJloVw55ak1Z471EK6oSulUxNuNfjJaC0aa2MypfBEoXEeDe2syefGkbz919Su5bwMNpTxdn",
+      "timestamp": "2026-03-04T10:00:49.000Z",
+      "source": "service-2",
+      "metadata": {
+        "requestId": "hp6703WPzWcEV08c",
+        "duration": 1572,
+        "statusCode": 500
+      }
+    },
+    {
+      "id": 2,
+      "level": "WARN",
+      "message": "zfwPI7Pb4vKsSkMQmHvHCNNePV0huyPnTNnnqmMQT60CyBOMdt1XG74i3g1Uyf1EAscTYtEYdkJdzY2xKEEuCxdkEa384hCviDixOSFxbLbVuLHSPczuGAc1DlF5WNDxHD6UEItj0Uq2Y8bsuJk3LWAYPjhRXRlu8bLyx2bfC10nE2mf6LRsLYKDUl",
+      "timestamp": "2026-03-19T02:56:22.000Z",
+      "source": "service-2",
+      "metadata": {
+        "requestId": "kgXsDF4qlaYDQAm3",
+        "duration": 3080,
+        "statusCode": 200
+      }
+    },
+    {
+      "id": 3,
+      "level": "WARN",
+      "message": "C5EX2N88Rda56UCjuxNfM7pRYBOWZKRxcCEDiKEhOA7bZYywpQL0EQpl8cgYywmxdc6J2BS61qLbYr7mFpGuYJR1ILn7xLNQP6KlsmqeyB55Gy7xsBoWEtcQhwoTpuze1frNwnuxQI8h8D06DDn",
+      "timestamp": "2026-03-14T07:26:14.000Z",
+      "source": "service-4",
+      "metadata": {
+        "requestId": "Uazwn1rgDziUM8QF",
+        "duration": 613,
+        "statusCode": 400
+      }
+    },
+    {
+      "id": 4,
+      "level": "ERROR",
+      "message": "X6i5XodJVy7zWR17gApr48Ft0dUfCYQe4Jh12osf56TTHmx4oX6HUYUHw162A83jbPTTLLSXDCgIm6SOZ85xnVn0WIWpjqMpsoDGwsQvBk1CG",
+      "timestamp": "2026-03-14T22:25:24.000Z",
+      "source": "service-0",
+      "metadata": {
+        "requestId": "GZgGmgR9gS6WBTER",
+        "duration": 2741,
+        "statusCode": 200
+      }
+    },
+    {
+      "id": 5,
+      "level": "DEBUG",
+      "message": "A17hOujKqXXvCg8lAkhguDu3ftnuURFKK5b7lcI5HmoQrWu9PZKwu6X2cxGQ0kkxHJknKWNgqop7K8vTIrdpjbfLU6B9BowZ2",
+      "timestamp": "2026-03-20T01:41:33.000Z",
+      "source": "service-2",
+      "metadata": {
+        "requestId": "5rCazct1ZHcKi3j9",
+        "duration": 3574,
+        "statusCode": 400
+      }
+    },
+    {
+      "id": 6,
+      "level": "WARN",
+      "message": "0VbYVSkbcfSDGE6wNCyzwnM3Ir8vIQ3ryCLX2nVHQWUL4fB86zHTomsVXP8o5meKjrZ9ampyhmC4aJfB5T6FsGodDGwCySM8kBvwft3riBsaLeMCjhbZSky8ViRvtAt2FvQ6EPCiyBJV4F3YWNyYdZyqJjteuAuMiJ98CUTQeRZsR6t2NisNeotKo",
+      "timestamp": "2026-03-18T10:50:10.000Z",
+      "source": "service-5",
+      "metadata": {
+        "requestId": "aiZvAl1yDlmkvEDd",
+        "duration": 459,
+        "statusCode": 200
+      }
+    },
+    {
+      "id": 7,
+      "level": "DEBUG",
+      "message": "Os13uDLk0YVwvn3SlaYCrz6Alzalr0ORSHnoRdtaiLjJ8Ytc4AyAPfSAyTHQFFGSUdENtMM48wm3H0ur6PpUCn0q5mpAGcvXWL3GfYd8v7IM3aXPbCtE1RDPFJOv1qyWbJxb9pKm9cw2m0xWAmBEF7wSBCN6JymxHNhIqQvWSPgiGTvTuXTtwBaoEqKdWA",
+      "timestamp": "2026-03-20T19:18:35.000Z",
+      "source": "service-4",
+      "metadata": {
+        "requestId": "oeGZs7j2aHqurflG",
+        "duration": 1730,
+        "statusCode": 400
+      }
+    },
+    {
+      "id": 8,
+      "level": "DEBUG",
+      "message": "Ka5yCbWoMhGokVcFREHRmAcMQdTNIjOjKbQ378cH3fP4U2gtEv1LIuVoIJdKg1eNFBHbCWYaUwe56Ywae5cyrGNm1drPzGfcy0lt5rB8XEUE7jHR0OaFFbsYZsShbdnUtxIJIP1vx0DCPmFNBhvftIG49ub8huP1",
+      "timestamp": "2026-03-14T13:57:31.000Z",
+      "source": "service-6",
+      "metadata": {
+        "requestId": "4YEGCWIBjDOOgG1t",
+        "duration": 3032,
+        "statusCode": 201
+      }
+    },
+    {
+      "id": 9,
+      "level": "DEBUG",
+      "message": "YIGL4y8kXKYdZ1eNsp8pVuuA1p1zukF4NKxLeX1dNJl31fUGi51hzrhM070UQp0SjCkMNderMbmyaaeCUduhdl",
+      "timestamp": "2026-03-12T17:13:16.000Z",
+      "source": "service-4",
+      "metadata": {
+        "requestId": "5DwgFo6VgpbWeEZH",
+        "duration": 2658,
+        "statusCode": 500
+      }
+    },
+    {
+      "id": 10,
+      "level": "DEBUG",
+      "message": "TpS4JASeaKeLJFAKqzZigbK5f6zPOEPt2fyDdBVYaVltssU8tSstzM5Du5H32wTfKDAE06EmxSlpbKTQoA6Elo2wcLBpAnYlPAhguXddOkLRoLiB4Gz92EkcLjekpCk4i6fXHuvWfXwDqw0febZWykNEjUWyCvCC178nyPZazGLmUr2lbPlvpmVVOtiATLKzYEz",
+      "timestamp": "2026-03-13T12:40:55.000Z",
+      "source": "service-0",
+      "metadata": {
+        "requestId": "ZiG1soSHFGeDtgnB",
+        "duration": 1113,
+        "statusCode": 400
+      }
+    }
+  ],
+  "statistics": {
+    "totalUsers": 10,
+    "totalProducts": 8,
+    "totalTransactions": 28,
+    "totalLogs": 10,
+    "actualSize": "0.03MB"
+  }
+}

@@ -1,0 +1,54 @@
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .button {
+    background: -webkit-gradient(linear, left top, right bottom, from(#2563eb), to(#7c3aed));
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 180ms ease;
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+}
+
+.input {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.95rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  background: #fff;
+  font: 16px/1.5 sans-serif;
+}
+
+.gradient {
+  background-image: -webkit-linear-gradient(left, #38bdf8, #8b5cf6);
+  background-image: linear-gradient(90deg, #38bdf8 0%, #8b5cf6 100%);
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+  .layout {
+    display: block;
+  }
+}

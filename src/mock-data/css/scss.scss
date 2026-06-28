@@ -1,0 +1,67 @@
+$brand: #8b5cf6;
+$surface: #f8fafc;
+$surface-alt: #eef2ff;
+$text: #111827;
+$radius: 1rem;
+
+@mixin card-shadow($color) {
+  box-shadow: 0 18px 42px rgba($color, 0.12);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top left, rgba($brand, 0.12), transparent 38%), $surface;
+  color: $text;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  @include card-shadow(#0f172a);
+  background: $surface-alt;
+  border-radius: $radius;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 2.2rem;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.35rem;
+  background: $brand;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  transition: transform 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+$breakpoint-sm: 720px;
+
+@media (max-width: $breakpoint-sm) {
+  .card {
+    padding: 1.5rem;
+  }
+}

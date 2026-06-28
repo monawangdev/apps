@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <meta>
+    <sizeType>small</sizeType>
+    <contentType>plain</contentType>
+    <itemCount>50</itemCount>
+    <generatedAt>2026-04-18T08:00:00Z</generatedAt>
+  </meta>
+  <items>
+    <item id="1" type="service" status="active">
+      <title>Service Beta</title>
+      <description>Professional service with premium support.</description>
+      <content>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</content>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+      <tags>
+        <tag>professional</tag>
+        <tag>support</tag>
+      </tags>
+    </item>
+    <item id="2" type="product" status="inactive">
+      <title>Item Gamma</title>
+      <description>Essential item for your collection.</description>
+      <content>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</content>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+      <tags>
+        <tag>essential</tag>
+        <tag>collection</tag>
+      </tags>
+    </item>
+    <item id="3" type="resource" status="active">
+      <title>Resource Delta</title>
+      <description>Reliable resource for your projects.</description>
+      <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</content>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+      <tags>
+        <tag>reliable</tag>
+        <tag>projects</tag>
+      </tags>
+    </item>
+  </items>
+</root>

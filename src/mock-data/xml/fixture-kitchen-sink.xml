@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- All data types combined -->
+<root>
+  <meta>
+    <type>kitchen-sink</type>
+    <description>Comprehensive test fixture with all data types</description>
+  </meta>
+  <allTypes>
+    <strings>
+      <simple>Hello World</simple>
+      <empty></empty>
+      <whitespace>   </whitespace>
+      <longString>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</longString>
+      <multiline>Line 1
+Line 2
+Line 3</multiline>
+      <special>Special &amp; characters: &lt;tag&gt; &quot;quotes&quot; &apos;apostrophe&apos;</special>
+    </strings>
+    <numbers>
+      <integer>42</integer>
+      <negativeInt>-100</negativeInt>
+      <decimal>3.14159</decimal>
+      <scientific>1.23e5</scientific>
+      <veryLarge>99999999999999999999</veryLarge>
+      <verySmall>0.00000001</verySmall>
+      <zero>0</zero>
+    </numbers>
+    <booleans>
+      <true>true</true>
+      <false>false</false>
+      <trueValue type="string">TRUE</trueValue>
+      <falseValue type="string">FALSE</falseValue>
+    </booleans>
+    <dates>
+      <iso8601>2026-04-18T08:00:00Z</iso8601>
+      <unix>1713428400</unix>
+      <iso8601WithMS>2026-04-18T08:00:00.123Z</iso8601WithMS>
+    </dates>
+    <uris>
+      <http>http://example.com</http>
+      <https>https://secure.example.com</https>
+      <mailto>mailto:user@example.com</mailto>
+      <tel>tel:+1-555-0123</tel>
+      <uuid>550e8400-e29b-41d4-a716-446655440000</uuid>
+    </uris>
+    <nested>
+      <level1>
+        <level2>
+          <level3>
+            <level4>Deep nesting</level4>
+          </level3>
+        </level2>
+      </level1>
+    </nested>
+    <arrays>
+      <numberArray>1, 2, 3, 4, 5</numberArray>
+      <stringArray>apple, banana, cherry</stringArray>
+      <mixedArray>text, 42, true, null</mixedArray>
+    </arrays>
+  </allTypes>
+</root>

@@ -1,0 +1,62 @@
+# Document 1: Application Configuration
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: production
+data:
+  APP_ENV: production
+  LOG_LEVEL: info
+  MAX_CONNECTIONS: '100'
+  CACHE_TTL: '3600'
+---
+# Document 2: Deployment Configuration
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app
+  replicas: 3
+spec:
+  template:
+    spec:
+      containers:
+        - name: web
+          image: myapp:1.2.0
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: 256Mi
+              cpu: 250m
+            limits:
+              memory: 512Mi
+              cpu: 500m
+---
+# Document 3: Service Configuration
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: web-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+---
+# Document 4: Environment Variables
+---
+environment:
+  variables:
+    NODE_ENV: production
+    DATABASE_URL: postgres://user:pass@db:5432/mydb
+    REDIS_URL: redis://cache:6379
+  secrets:
+    API_KEY: ${API_KEY}
+    JWT_SECRET: ${JWT_SECRET}
+...

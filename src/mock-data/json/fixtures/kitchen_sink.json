@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generatedAt": "2026-03-12T12:41:33.560Z",
+    "description": "Kitchen sink — every value type and structure in one payload 🧪"
+  },
+  "primitives": {
+    "string": "hello world",
+    "number": 42,
+    "float": 3.14,
+    "boolTrue": true,
+    "boolFalse": false,
+    "nullVal": null
+  },
+  "textVariants": {
+    "plain": "Simple text content",
+    "html": "<div class=\"card\"><h2>Title</h2><p>Body with <strong>bold</strong></p></div>",
+    "link": "See https://docs.example.com/api for the full reference",
+    "htmlLink": "<p>Docs: https://docs.example.com — <em>updated weekly</em></p>",
+    "emoji": "🚀 Launched! Check 📊 dashboard for metrics",
+    "unicode": "你好 🌍 éàüñ Блок",
+    "escaped": "line1\nline2\ttabbed\t\"quoted\"\\backslash",
+    "empty": "",
+    "long": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+  },
+  "nested": {
+    "level1": {
+      "level2": {
+        "level3": {
+          "level4": {
+            "value": "four levels deep",
+            "tags": [
+              "deep",
+              "nested"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "arrays": {
+    "empty": [],
+    "numbers": [
+      0,
+      1,
+      -1,
+      3.14,
+      1000000
+    ],
+    "strings": [
+      "alpha",
+      "beta",
+      "gamma"
+    ],
+    "mixed": [
+      1,
+      "two",
+      true,
+      null,
+      {
+        "id": 1
+      },
+      [
+        10,
+        20
+      ]
+    ],
+    "nested": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        [
+          4,
+          [
+            5
+          ]
+        ]
+      ]
+    ],
+    "ofObjects": [
+      {
+        "id": 1,
+        "name": "Alice 👩‍💻",
+        "active": true
+      },
+      {
+        "id": 2,
+        "name": "Bob 👨‍🚀",
+        "active": false
+      },
+      {
+        "id": 3,
+        "name": "Charlie 🧑‍🎨",
+        "active": true
+      }
+    ]
+  },
+  "objects": {
+    "empty": {},
+    "flat": {
+      "a": 1,
+      "b": 2,
+      "c": 3
+    },
+    "withNull": {
+      "present": "yes",
+      "absent": null
+    }
+  },
+  "links": {
+    "homepage": "https://example.com",
+    "api": "https://api.example.com/v2/data?format=json&pretty=true",
+    "github": "https://github.com/example/json-prettify",
+    "mixed": "Visit https://example.com and https://docs.example.com/guide#setup for details."
+  },
+  "emojiFull": {
+    "flags": "🇯🇵 🇺🇸 🇬🇧 🇩🇪 🇨🇳 🇰🇷",
+    "faces": "😀 😂 🤣 😍 🤩 🤯 😱 🥵 🥶",
+    "hands": "👍 👎 👋 ✌️ 🤞 🤟 🤘 👌",
+    "animals": "🐶 🐱 🐭 🐹 🐰 🦊 🐻 🐼 🐨",
+    "skinTones": "👋🏻 👋🏼 👋🏽 👋🏾 👋🏿",
+    "compound": "👨‍👩‍👧‍👦 👩‍💻 🏳️‍🌈 🧑‍🤝‍🧑"
+  },
+  "specialNumbers": {
+    "zero": 0,
+    "negZero": 0,
+    "maxSafe": 9007199254740991,
+    "minSafe": -9007199254740991,
+    "scientific": 6.022e+23,
+    "tiny": 1.6e-19
+  }
+}

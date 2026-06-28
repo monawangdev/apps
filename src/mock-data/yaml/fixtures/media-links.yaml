@@ -1,0 +1,45 @@
+title: Video & Audio URL Preview Cases
+description: "用于测试视频/音频链接的 hover 预览与播放能力。所有资源均已验证：HTTP 200 + Access-Control-Allow-Origin: *，Safari H.264/AAC 兼容。"
+
+video:
+  mp4Flower: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4
+  webmFlower: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+  mp4Friday: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4
+
+audio:
+  mp3TRex: https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3
+  mp3Ambient1: https://cdn.freesound.org/previews/612/612095_5674468-lq.mp3
+  mp3Ambient2: https://cdn.freesound.org/previews/411/411090_5121236-lq.mp3
+  mp3Ambient3: https://cdn.freesound.org/previews/131/131660_2398403-lq.mp3
+  mp3Ambient4: https://cdn.freesound.org/previews/171/171671_2437358-lq.mp3
+
+sentenceWithVideo: "Watch the flower clip at https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4 for a quick demo."
+sentenceWithAudio: "Listen to the preview https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3 before downloading."
+mixedMediaAndLinks: "Docs at https://example.com/docs, video https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4, audio https://cdn.freesound.org/previews/612/612095_5674468-lq.mp3."
+
+allMediaTypes:
+  - https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4
+  - https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+  - https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4
+  - https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3
+  - https://cdn.freesound.org/previews/411/411090_5121236-lq.mp3
+  - https://example.com/not-media-link
+
+nested:
+  tutorial: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4
+  podcast: https://cdn.freesound.org/previews/131/131660_2398403-lq.mp3
+  relatedPage: https://example.com/media-guide
+
+sources:
+  mdn:
+    description: "MDN interactive-examples — Access-Control-Allow-Origin: *，H.264 MP4 + WebM，Safari 原生支持"
+    video_mp4_flower: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4
+    video_webm_flower: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm
+    video_mp4_friday: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/friday.mp4
+    audio_mp3: https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3
+  freesound:
+    description: "Freesound CDN previews — Access-Control-Allow-Origin: *，MP3，支持 Range 请求"
+    preview_1: https://cdn.freesound.org/previews/612/612095_5674468-lq.mp3
+    preview_2: https://cdn.freesound.org/previews/411/411090_5121236-lq.mp3
+    preview_3: https://cdn.freesound.org/previews/131/131660_2398403-lq.mp3
+    preview_4: https://cdn.freesound.org/previews/171/171671_2437358-lq.mp3

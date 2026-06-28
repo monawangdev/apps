@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "description": "数组值与嵌套数组测试",
+    "createdAt": "2026-04-18T00:00:00.000Z",
+    "purpose": "验证各种数组嵌套与数组内部值类型的渲染与解析"
+  },
+  "arrayScenarios": {
+    "primitiveValues": [0, -1, 3.14, true, false, null, "text", ""],
+    "mixedTypeValues": [
+      1,
+      "two",
+      true,
+      null,
+      {
+        "tag": "object",
+        "values": [10, "x", false, null]
+      },
+      ["inner", 42, null]
+    ],
+    "nestedArrays": [
+      [1, 2, 3],
+      [4, [5, 6], ["a", null, true]],
+      []
+    ],
+    "deepNestedArrays": [
+      [
+        [
+          [
+            [
+              "deep value",
+              {
+                "id": 7,
+                "flags": [false, true]
+              },
+              [100, 200]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "arrayOfObjects": [
+      {
+        "id": 1,
+        "name": "Alice",
+        "roles": ["admin", "editor"],
+        "scores": [100, 95, 88]
+      },
+      {
+        "id": 2,
+        "name": "Bob",
+        "roles": [],
+        "scores": [null, 0, 42],
+        "tags": ["new", "retry"]
+      },
+      {
+        "id": 3,
+        "name": "Carla",
+        "profiles": [
+          {"platform": "web", "active": true},
+          {"platform": "mobile", "active": false}
+        ]
+      }
+    ],
+    "arraysWithNulls": [
+      [null, null],
+      [true, false, null],
+      [{"x": null}, [null, "end"]]
+    ],
+    "arrayValueVariants": [
+      ["alpha", 123, false, null, {"inner": ["x", "y", {"deep": [1, 2]}]}],
+      [],
+      ["single"]
+    ]
+  },
+  "summary": {
+    "note": "此 fixture 覆盖多层数组、对象内数组、混合类型数组、空数组和 null 元素等场景"
+  }
+}

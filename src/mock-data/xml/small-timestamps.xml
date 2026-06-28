@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <meta>
+    <sizeType>small</sizeType>
+    <itemCount>50</itemCount>
+    <generatedAt>2026-04-18T08:00:00Z</generatedAt>
+  </meta>
+  <items>
+    <item id="1" timestamp="1713428400">
+      <title>Morning Update</title>
+      <timestamp type="unix">1713428400</timestamp>
+      <timestamp type="iso">2026-04-18T08:00:00Z</timestamp>
+      <content>System started successfully.</content>
+    </item>
+    <item id="2" timestamp="1713428460">
+      <title>Processing Complete</title>
+      <timestamp type="unix">1713428460</timestamp>
+      <timestamp type="iso">2026-04-18T08:01:00Z</timestamp>
+      <content>Batch processing finished in 60 seconds.</content>
+    </item>
+    <item id="3" timestamp="1713428520">
+      <title>Data Sync</title>
+      <timestamp type="unix">1713428520</timestamp>
+      <timestamp type="iso">2026-04-18T08:02:00Z</timestamp>
+      <content>Data synchronized with remote server.</content>
+    </item>
+  </items>
+</root>

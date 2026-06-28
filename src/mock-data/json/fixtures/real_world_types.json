@@ -1,0 +1,71 @@
+{
+  "report": "Product performance snapshot",
+  "generatedAt": "2026-05-24T09:30:00.000Z",
+  "store": "Northstar Outdoor Supply",
+  "currency": "USD",
+  "featuredProduct": {
+    "sku": "NS-BP-45-GRF",
+    "name": "TrailForge 45L Travel Pack",
+    "category": "Outdoor Gear",
+    "price": 149.95,
+    "rating": 4.8,
+    "inStock": true,
+    "launchDate": "2026-03-18",
+    "image": "https://images.example.com/northstar/trailforge-45l.jpg",
+    "tags": [
+      "carry-on",
+      "recycled fabric",
+      "water resistant"
+    ]
+  },
+  "inventory": {
+    "warehouse": 128,
+    "retail": 34,
+    "reserved": 12,
+    "reorderNeeded": false,
+    "nextRestock": null
+  },
+  "salesToday": {
+    "orders": 421,
+    "unitsSold": 593,
+    "grossRevenue": 48720.15,
+    "conversionRate": 0.0472,
+    "averageOrderValue": 115.72
+  },
+  "weeklyRevenue": [
+    39106.81,
+    45218.4,
+    48720.15,
+    46890.3,
+    51244.9
+  ],
+  "topCustomers": [
+    {
+      "name": "Maya Chen",
+      "tier": "Gold",
+      "lastOrder": 214.45,
+      "emailVerified": true
+    },
+    {
+      "name": "Jordan Lee",
+      "tier": "Silver",
+      "lastOrder": 89.99,
+      "emailVerified": false
+    }
+  ],
+  "promotion": {
+    "code": "TRAIL15",
+    "discountPercent": 15,
+    "active": true,
+    "expiresAt": "2026-06-30T23:59:59.000Z",
+    "notes": null
+  },
+  "jsonTypesShown": {
+    "object": "featuredProduct",
+    "array": "weeklyRevenue",
+    "string": "TrailForge 45L Travel Pack",
+    "number": 149.95,
+    "boolean": true,
+    "null": null
+  }
+}

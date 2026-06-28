@@ -1,0 +1,65 @@
+.menu,
+.menu--open,
+.menu[aria-expanded="true"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item:first-child {
+  padding-top: 0;
+}
+
+.menu__link:hover,
+.menu__link:focus-visible,
+.menu__link:active {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.article > :not(.article__header) {
+  margin-top: 1.75rem;
+}
+
+.article__header + p {
+  margin-top: 0.85rem;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.15), transparent 35%);
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "✔";
+  position: absolute;
+  inset-inline-end: 0.5rem;
+  color: #10b981;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+button[aria-expanded="true"] {
+  transform: rotate(180deg);
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated {
+    animation: none !important;
+    transition: none !important;
+  }
+}

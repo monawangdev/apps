@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <meta>
+    <sizeType>small</sizeType>
+    <contentType>html</contentType>
+    <itemCount>50</itemCount>
+    <generatedAt>2026-04-18T08:00:00Z</generatedAt>
+  </meta>
+  <items>
+    <item id="1">
+      <title>Article One</title>
+      <description>A comprehensive guide with HTML content.</description>
+      <content><![CDATA[
+        <h2>Welcome to Our Guide</h2>
+        <p>This article contains <strong>HTML markup</strong> and <em>formatted text</em>.</p>
+        <ul>
+          <li>First point</li>
+          <li>Second point</li>
+        </ul>
+      ]]></content>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+    </item>
+    <item id="2">
+      <title>Tutorial Two</title>
+      <description>Step-by-step tutorial with instructions.</description>
+      <content><![CDATA[
+        <h3>Getting Started</h3>
+        <p>Follow these <a href="https://example.com">detailed steps</a> to begin.</p>
+        <table>
+          <tr><th>Step</th><th>Action</th></tr>
+          <tr><td>1</td><td>Initialize</td></tr>
+          <tr><td>2</td><td>Configure</td></tr>
+        </table>
+      ]]></content>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+    </item>
+    <item id="3">
+      <title>Blog Post Three</title>
+      <description>A blog post with rich media.</description>
+      <content><![CDATA[
+        <h2>Latest Updates</h2>
+        <p>Check out our latest <img src="image.jpg" alt="banner" /> banner.</p>
+        <blockquote>This is an important quote about the topic.</blockquote>
+      ]]></content>
+      <createdAt>2026-04-18T08:00:00Z</createdAt>
+    </item>
+  </items>
+</root>

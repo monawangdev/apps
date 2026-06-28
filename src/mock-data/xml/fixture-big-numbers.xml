@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Big numbers and numeric edge cases -->
+<root>
+  <meta>
+    <type>big-numbers</type>
+    <description>Large numbers, decimals, and numeric edge cases</description>
+  </meta>
+  <bigIntegers>
+    <positiveInt>999999999999999999</positiveInt>
+    <negativeInt>-999999999999999999</negativeInt>
+    <largeWithLeadingZeros>000000000000000001</largeWithLeadingZeros>
+    <maxSafeInteger>9007199254740991</maxSafeInteger>
+    <beyondMaxSafe>9007199254740992</beyondMaxSafe>
+  </bigIntegers>
+  <precisionDecimals>
+    <pi>3.14159265358979323846</pi>
+    <phi>1.61803398874989484820</phi>
+    <epsilon>0.00000000000000000001</epsilon>
+    <hugeDecimal>123456789.987654321</hugeDecimal>
+    <tinyDecimal>0.000000000000000001</tinyDecimal>
+  </precisionDecimals>
+  <scientificNotation>
+    <positive>1.23e10</positive>
+    <negative>1.23e-10</negative>
+    <largeExponent>5.67e100</largeExponent>
+    <smallExponent>8.9e-100</smallExponent>
+    <avogadro>6.02214076e23</avogadro>
+    <planck>6.62607015e-34</planck>
+  </scientificNotation>
+  <specialNumbers>
+    <zero>0</zero>
+    <negativeZero>-0</negativeZero>
+    <percentages>
+      <whole>100</whole>
+      <decimal>99.99</decimal>
+      <fraction>33.3333</fraction>
+    </percentages>
+    <ratios>
+      <ratio1>16:9</ratio1>
+      <ratio2>4:3</ratio2>
+      <ratio3>1:1</ratio3>
+    </ratios>
+  </specialNumbers>
+  <monetaryValues>
+    <usd>1234567.89</usd>
+    <precision>0.01</precision>
+    <largeAmount>9999999999.99</largeAmount>
+    <fractionalCent>0.001</fractionalCent>
+  </monetaryValues>
+</root>

@@ -1,0 +1,111 @@
+{
+  "emptyValues": {
+    "emptyString": "",
+    "emptyArray": [],
+    "emptyObject": {},
+    "nullValue": null,
+    "nestedEmpty": {
+      "arr": [],
+      "obj": {},
+      "str": "",
+      "deep": {
+        "inner": {
+          "leaf": null
+        }
+      }
+    }
+  },
+  "booleans": {
+    "trueVal": true,
+    "falseVal": false,
+    "flags": [
+      true,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  "numbers": {
+    "zero": 0,
+    "negativeZero": 0,
+    "integer": 42,
+    "negative": -273,
+    "float": 3.14159265358979,
+    "smallFloat": 0.000001,
+    "largeInt": 9007199254740991,
+    "negLargeInt": -9007199254740991,
+    "scientific": 12300000000,
+    "negScientific": -4.56e-7
+  },
+  "specialStrings": {
+    "withNewlines": "line one\nline two\nline three",
+    "withTabs": "col1\tcol2\tcol3",
+    "withCarriageReturn": "before\r\nafter",
+    "withBackslash": "path\\to\\file",
+    "withQuotes": "He said \"hello\" and she said 'hi'",
+    "withUnicode": "你好世界 こんにちは 안녕하세요 Привет",
+    "withSymbols": "© 2025 Acme™ — All rights reserved ® • ± 0.5%",
+    "withZeroWidth": "invisible​‌joiners‍here﻿",
+    "longString": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA middle BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    "singleChar": "x"
+  },
+  "mixedArrays": {
+    "heterogeneous": [
+      1,
+      "two",
+      true,
+      null,
+      {
+        "key": "val"
+      },
+      [
+        10,
+        20
+      ]
+    ],
+    "nestedArrays": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        [
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          6
+        ]
+      ]
+    ],
+    "arrayOfEmpties": [
+      [],
+      {},
+      "",
+      null,
+      0,
+      false
+    ]
+  },
+  "urlEdgeCases": {
+    "plainUrl": "https://example.com",
+    "urlWithPath": "https://api.example.com/v1/users/42/posts?page=2&limit=10",
+    "urlWithFragment": "https://docs.example.com/guide#installation",
+    "urlWithAuth": "https://user:pass@private.example.com/admin",
+    "urlWithPort": "https://localhost:8443/api/health",
+    "multipleUrls": "Visit https://example.com or https://example.org for more info.",
+    "urlInSentence": "The docs at https://docs.example.com/api explain everything.",
+    "notAUrl": "http is a protocol but this is not a link"
+  },
+  "whitespace": {
+    "leadingSpaces": "   leading spaces",
+    "trailingSpaces": "trailing spaces   ",
+    "multipleSpaces": "word     word",
+    "onlySpaces": "     ",
+    "mixedWhitespace": " \t mixed \n whitespace \r\n here "
+  }
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Color values in various formats -->
+<root>
+  <meta>
+    <type>color-values</type>
+    <description>Various color formats for rendering and detection</description>
+  </meta>
+  <namedColors>
+    <color>red</color>
+    <color>blue</color>
+    <color>green</color>
+    <color>white</color>
+    <color>black</color>
+    <color>transparent</color>
+  </namedColors>
+  <hexColors>
+    <hex3>#fff</hex3>
+    <hex6>#ffffff</hex6>
+    <hex8>#ffffffff</hex8>
+    <lowercase>#c0ffee</lowercase>
+    <uppercase>#DEADBEEF</uppercase>
+    <mixed>#CaDeFf</mixed>
+  </hexColors>
+  <rgbColors>
+    <rgb>rgb(255, 0, 0)</rgb>
+    <rgb>rgb(0, 255, 0)</rgb>
+    <rgb>rgb(0, 0, 255)</rgb>
+    <rgbNoSpace>rgb(100,150,200)</rgbNoSpace>
+    <rgbPercent>rgb(100%, 50%, 0%)</rgbPercent>
+  </rgbColors>
+  <rgbaColors>
+    <rgba>rgba(255, 0, 0, 0.5)</rgba>
+    <rgba>rgba(0, 255, 0, 1)</rgba>
+    <rgba>rgba(0, 0, 255, 0)</rgba>
+    <rgbaPercent>rgba(100%, 50%, 0%, 50%)</rgbaPercent>
+    <rgbaSpace>rgba( 200 , 100 , 50 , 0.75 )</rgbaSpace>
+  </rgbaColors>
+  <hslColors>
+    <hsl>hsl(0, 100%, 50%)</hsl>
+    <hsl>hsl(120, 100%, 50%)</hsl>
+    <hsl>hsl(240, 100%, 50%)</hsl>
+    <hslNoSpace>hsl(60,100%,50%)</hslNoSpace>
+  </hslColors>
+  <hslaColors>
+    <hsla>hsla(0, 100%, 50%, 0.5)</hsla>
+    <hsla>hsla(120, 100%, 50%, 1)</hsla>
+    <hsla>hsla(240, 100%, 50%, 0)</hsla>
+  </hslaColors>
+  <oklchColors>
+    <oklch>oklch(59.69% 0.1 29.23)</oklch>
+    <oklch>oklch(50% 0.2 180)</oklch>
+  </oklchColors>
+  <gradients>
+    <linear>linear-gradient(to right, red, blue)</linear>
+    <linear>linear-gradient(45deg, #ff0000, #00ff00, #0000ff)</linear>
+    <radial>radial-gradient(circle, red 0%, blue 100%)</radial>
+    <conic>conic-gradient(from 0deg, red, yellow, lime, aqua, blue, magenta, red)</conic>
+  </gradients>
+</root>

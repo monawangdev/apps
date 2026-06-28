@@ -1,0 +1,51 @@
+@brand: #2563eb;
+@surface: #f8fafc;
+@surface-muted: #eef2ff;
+@radius: 14px;
+
+.rounded(@radius) {
+  border-radius: @radius;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, #eff6ff 0%, #e0f2fe 100%);
+  color: #0f172a;
+}
+
+.card {
+  .rounded(@radius);
+  background: @surface;
+  border: 1px solid darken(@surface, 8%);
+  padding: 2rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.card-title {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.3rem;
+  background: @brand;
+  color: white;
+  border: none;
+  .rounded(999px);
+  transition: background 180ms ease;
+}
+
+.button:hover {
+  background: lighten(@brand, 8%);
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    padding: 1.5rem;
+  }
+}

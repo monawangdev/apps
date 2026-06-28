@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Unicode and Emoji test data -->
+<root>
+  <meta>
+    <type>emoji</type>
+    <description>Unicode characters and emoji for rendering tests</description>
+  </meta>
+  <unicode>
+    <arabicScript>العربية مرحبا</arabicScript>
+    <chineseScript>中文 你好 世界</chineseScript>
+    <cyrillicScript>Русский привет</cyrillicScript>
+    <greekScript>Ελληνικά γεια</greekScript>
+    <devanagariScript>हिन्दी नमस्ते</devanagariScript>
+    <japaneseScript>日本語 こんにちわ</japaneseScript>
+    <koreanScript>한국어 안녕하세요</koreanScript>
+    <mixtureOfScripts>Hello مرحبا 你好 привет</mixtureOfScripts>
+  </unicode>
+  <emoji>
+    <smileys>😀 😃 😄 😁 🤣 😆 😅 😂</smileys>
+    <hearts>❤️ 🧡 💛 💚 💙 💜 🤍 🤎 🖤</hearts>
+    <nature>🌲 🌳 🌴 🌵 🌾 🌿 ☘️ 🍀</nature>
+    <food>🍕 🍔 🍟 🍗 🥙 🌮 🌯 🥘</food>
+    <sports>⚽ 🏀 🏈 ⚾ 🎾 🏐 🏉 🥏</sports>
+    <animals>🐶 🐱 🐭 🐹 🐰 🦊 🐻 🐼</animals>
+    <flags>🇺🇸 🇬🇧 🇯🇵 🇨🇳 🇮🇳 🇧🇷 🇦🇺 🇫🇷</flags>
+    <mixed>The quick 🦊 jumps over 🌾 with 🎉 and 💪</mixed>
+  </emoji>
+  <specialUnicode>
+    <mathSymbols>∑ ∫ √ ∞ ≈ ≠ ≤ ≥ ± × ÷</mathSymbols>
+    <musicalNotes>♪ ♫ ♬ ♭ ♮ ♯</musicalNotes>
+    <arrows>← → ↑ ↓ ↖ ↗ ↘ ↙ ⇐ ⇒ ⇑ ⇓</arrows>
+    <geometric>● ○ ■ □ ▲ △ ▼ ▽ ◆ ◇</geometric>
+    <dingbats>❂ ❄ ✎ ✏ ✐ ✑ ✒ ✖ ✚ ✔ ✓</dingbats>
+  </specialUnicode>
+</root>

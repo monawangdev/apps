@@ -1,0 +1,68 @@
+{
+  "profile": {
+    "displayName": "Jane ✨ Doe",
+    "bio": "Full-stack developer 💻 | Coffee lover ☕ | Open source advocate 🌍",
+    "status": "🟢 Online",
+    "mood": "😊"
+  },
+  "categories": [
+    {
+      "icon": "📦",
+      "label": "Packages",
+      "count": 42
+    },
+    {
+      "icon": "⭐",
+      "label": "Starred",
+      "count": 128
+    },
+    {
+      "icon": "🔥",
+      "label": "Trending",
+      "count": 7
+    },
+    {
+      "icon": "🐛",
+      "label": "Bugs",
+      "count": 3
+    },
+    {
+      "icon": "✅",
+      "label": "Done",
+      "count": 99
+    },
+    {
+      "icon": "🚧",
+      "label": "In Progress",
+      "count": 5
+    }
+  ],
+  "reactions": {
+    "👍": 15,
+    "👎": 2,
+    "❤️": 8,
+    "😂": 23,
+    "🎉": 4,
+    "🤔": 1
+  },
+  "messages": [
+    {
+      "from": "Alice 🌸",
+      "text": "Hey! 👋 The new build looks great 🚀🚀🚀",
+      "timestamp": "2025-03-03T10:30:00Z"
+    },
+    {
+      "from": "Bob 🧑‍💻",
+      "text": "Found a bug 🐛 in the emoji parser — flags like 🇯🇵 and 🇺🇸 break rendering",
+      "timestamp": "2025-03-03T11:15:00Z"
+    },
+    {
+      "from": "Charlie 🎵",
+      "text": "Skin tone test: 👋🏻 👋🏼 👋🏽 👋🏾 👋🏿",
+      "timestamp": "2025-03-03T12:00:00Z"
+    }
+  ],
+  "tagline": "🌟 Building the future, one commit at a time 🌟",
+  "emptyEmoji": "",
+  "mixedContent": "Price: ¥100 · Rating: ★★★★☆ · Status: ✔ Approved"
+}

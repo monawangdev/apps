@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edge cases: null values, special characters, empty elements -->
+<root>
+  <meta>
+    <type>edge-cases</type>
+    <description>Edge cases for XML parsing and rendering</description>
+  </meta>
+  <testCases>
+    <case id="1">
+      <name>Empty Elements</name>
+      <emptyTag></emptyTag>
+      <selfClosing/>
+      <nullable/>
+    </case>
+    <case id="2">
+      <name>Special Characters</name>
+      <ampersand>Tom &amp; Jerry</ampersand>
+      <lessThan>2 &lt; 3</lessThan>
+      <greaterThan>3 &gt; 2</greaterThan>
+      <quotes>He said "Hello"</quotes>
+      <singleQuote>It&apos;s working</singleQuote>
+    </case>
+    <case id="3">
+      <name>Unicode &amp; Whitespace</name>
+      <unicode>α β γ δ ε ζ η θ</unicode>
+      <whitespace>
+        Line 1
+        Line 2
+        Line 3
+      </whitespace>
+      <tabs>Col1	Col2	Col3</tabs>
+      <mixed>Text with   multiple    spaces</mixed>
+    </case>
+    <case id="4">
+      <name>CDATA Sections</name>
+      <cdata><![CDATA[This is <raw> & "unescaped" text]]></cdata>
+      <code><![CDATA[
+        function test() {
+          if (x < 5 && y > 2) {
+            return "success";
+          }
+        }
+      ]]></code>
+    </case>
+    <case id="5">
+      <name>Null Values</name>
+      <nullElement xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <emptyString></emptyString>
+      <zero>0</zero>
+      <false>false</false>
+    </case>
+    <case id="6">
+      <name>Numbers</name>
+      <integer>42</integer>
+      <decimal>3.14159</decimal>
+      <scientific>1.23e-4</scientific>
+      <negative>-999.99</negative>
+      <large>9999999999999999</large>
+    </case>
+    <case id="7">
+      <name>Mixed Content</name>
+      <mixed>
+        Text before <span>inline element</span> text after
+        <childElement>nested</childElement>
+        More text
+      </mixed>
+    </case>
+  </testCases>
+</root>

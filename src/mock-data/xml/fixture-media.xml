@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Media URLs - Real audio/video files served from local xml-server -->
+<root>
+  <meta>
+    <type>media-links</type>
+    <description>Real audio and video files served locally from xml-server</description>
+    <baseUrl>http://localhost:3001</baseUrl>
+  </meta>
+  <audioFormats>
+    <mp3>http://localhost:3001/media/song.mp3</mp3>
+    <wav>http://localhost:3001/media/silence.wav</wav>
+    <podcast>http://localhost:3001/media/podcast.mp3</podcast>
+    <track>http://localhost:3001/media/track-1.wav</track>
+    <background>http://localhost:3001/media/background.wav</background>
+    <!-- Placeholders for other formats -->
+    <flac>http://localhost:3001/media/silence.wav</flac>
+    <aac>http://localhost:3001/media/song.mp3</aac>
+    <ogg>http://localhost:3001/media/silence.wav</ogg>
+    <m4a>http://localhost:3001/media/song.mp3</m4a>
+  </audioFormats>
+  <audioMetadata>
+    <track1>
+      <url>http://localhost:3001/media/track-1.wav</url>
+      <title>Background Track 1</title>
+      <artist>Test Server</artist>
+      <duration>1</duration>
+      <bitrate>44100</bitrate>
+      <format>WAV</format>
+    </track1>
+    <song1>
+      <url>http://localhost:3001/media/song.mp3</url>
+      <title>Sample Song</title>
+      <artist>Test Server</artist>
+      <thumbnail>http://localhost:3001/images/medium.png</thumbnail>
+      <duration>3</duration>
+    </song1>
+    <podcast1>
+      <url>http://localhost:3001/media/podcast.mp3</url>
+      <title>Sample Podcast Episode</title>
+      <description>Test episode from local server</description>
+      <duration>1</duration>
+    </podcast1>
+  </audioMetadata>
+  <localAudioAssets>
+    <silence>http://localhost:3001/media/silence.wav</silence>
+    <track1>http://localhost:3001/media/track-1.wav</track1>
+    <background>http://localhost:3001/media/background.wav</background>
+    <song>http://localhost:3001/media/song.mp3</song>
+    <podcast>http://localhost:3001/media/podcast.mp3</podcast>
+  </localAudioAssets>
+  <videoPlaceholder>
+    <note>Real video files can be added to /public/media/ directory</note>
+    <example1>Video files would be served at http://localhost:3001/media/video.mp4</example1>
+    <example2>Video files would be served at http://localhost:3001/media/sample.webm</example2>
+  </videoPlaceholder>
+  <streamingPlatforms>
+    <youtube>https://www.youtube.com/watch?v=dQw4w9WgXcQ</youtube>
+    <youtubeEmbed><![CDATA[https://www.youtube.com/embed/dQw4w9WgXcQ]]></youtubeEmbed>
+    <vimeo>https://vimeo.com/123456789</vimeo>
+  </streamingPlatforms>
+  <mediaWithPreview>
+    <audioWithImage>
+      <url>http://localhost:3001/media/song.mp3</url>
+      <thumbnail>http://localhost:3001/images/small.png</thumbnail>
+      <title>Audio Track</title>
+      <format>MP3</format>
+    </audioWithImage>
+    <trackWithPoster>
+      <url>http://localhost:3001/media/track-1.wav</url>
+      <poster>http://localhost:3001/images/large.png</poster>
+      <duration>1</duration>
+      <format>WAV</format>
+    </trackWithPoster>
+  </mediaWithPreview>
+  <testScenarios>
+    <description>Real working media files from localhost</description>
+    <mp3_1>http://localhost:3001/media/song.mp3</mp3_1>
+    <mp3_2>http://localhost:3001/media/podcast.mp3</mp3_2>
+    <wav_1>http://localhost:3001/media/silence.wav</wav_1>
+    <wav_2>http://localhost:3001/media/track-1.wav</wav_2>
+    <wav_3>http://localhost:3001/media/background.wav</wav_3>
+  </testScenarios>
+  <errorCases>
+    <broken>http://localhost:3001/media/does-not-exist.mp3</broken>
+    <incomplete>http://localhost:3001/media/</incomplete>
+    <malformed>not-a-url</malformed>
+  </errorCases>
+</root>

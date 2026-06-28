@@ -1,0 +1,33 @@
+{
+  "description": "Objects with one property and arrays with one item — for collapse/expand and count display",
+  "singleProp": {
+    "name": "only"
+  },
+  "singleItem": [
+    "one"
+  ],
+  "nested": {
+    "singleProp": {
+      "id": 1
+    },
+    "singleItem": [
+      true
+    ],
+    "deep": {
+      "singleProp": {
+        "label": "leaf"
+      },
+      "singleItem": [
+        null
+      ]
+    }
+  },
+  "mixed": {
+    "objectWithOneKey": {
+      "value": 42
+    },
+    "arrayWithOneElement": [
+      "single"
+    ]
+  }
+}

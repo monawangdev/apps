@@ -1,0 +1,110 @@
+{
+  "company": {
+    "name": "Acme Corp",
+    "founded": 2010,
+    "active": true,
+    "address": {
+      "street": "123 Main St",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62704",
+      "geo": {
+        "lat": 39.7817,
+        "lng": -89.6501
+      }
+    },
+    "departments": [
+      {
+        "name": "Engineering",
+        "headcount": 42,
+        "teams": [
+          {
+            "name": "Frontend",
+            "lead": {
+              "firstName": "Alice",
+              "lastName": "Wang",
+              "email": "alice@acme.com"
+            },
+            "members": [
+              "Bob",
+              "Charlie",
+              "Diana"
+            ],
+            "projects": [
+              {
+                "name": "Dashboard v3",
+                "status": "active",
+                "milestones": [
+                  {
+                    "title": "Alpha",
+                    "date": "2025-01-15",
+                    "done": true
+                  },
+                  {
+                    "title": "Beta",
+                    "date": "2025-03-01",
+                    "done": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Backend",
+            "lead": {
+              "firstName": "Eve",
+              "lastName": "Zhang",
+              "email": "eve@acme.com"
+            },
+            "members": [
+              "Frank",
+              "Grace"
+            ],
+            "projects": [
+              {
+                "name": "API Gateway",
+                "status": "planning",
+                "milestones": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Design",
+        "headcount": 12,
+        "teams": [
+          {
+            "name": "UX Research",
+            "lead": {
+              "firstName": "Hank",
+              "lastName": "Li",
+              "email": "hank@acme.com"
+            },
+            "members": [
+              "Ivy"
+            ],
+            "projects": []
+          }
+        ]
+      }
+    ],
+    "config": {
+      "features": {
+        "darkMode": true,
+        "betaAccess": false,
+        "limits": {
+          "maxUploadMB": 100,
+          "maxUsers": 500,
+          "nested": {
+            "level4": {
+              "level5": {
+                "level6": "deeply nested value"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

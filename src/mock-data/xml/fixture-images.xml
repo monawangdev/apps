@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Image URLs for preview testing - Using reliable open-source resources -->
+<root>
+  <meta>
+    <type>image-links</type>
+    <description>Real image files from trusted open-source resources (Wikimedia, picsum.photos, dummyimage.com, CDN)</description>
+    <lastUpdated>2026-04-25</lastUpdated>
+  </meta>
+  
+  <commonFormats>
+    <description>Standard image formats with real files</description>
+    <jpg>https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png</jpg>
+    <jpeg>https://dummyimage.com/400x300/1f2937/ffffff.jpg?text=Sample+Photo</jpeg>
+    <png>https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png</png>
+    <svg>https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg</svg>
+    <gif>https://dummyimage.com/300x200/7c3aed/ffffff.gif?text=GIF+Format</gif>
+    <webp>https://dummyimage.com/320x240/f59e0b/111827.webp?text=WebP+Format</webp>
+  </commonFormats>
+  
+  <sizeVariations>
+    <description>Various image sizes for responsive design testing</description>
+    <thumbnail>https://picsum.photos/id/50/150/150.jpg</thumbnail>
+    <small>https://picsum.photos/id/51/300x200.jpg</small>
+    <medium>https://picsum.photos/id/52/600x400.jpg</medium>
+    <large>https://picsum.photos/id/53/1200x800.jpg</large>
+    <xlarge>https://picsum.photos/id/54/2400x1600.jpg</xlarge>
+  </sizeVariations>
+  
+  <largeImages>
+    <description>High-resolution images for testing hover preview performance</description>
+    <landscape4K>https://picsum.photos/id/10/3840x2160.jpg</landscape4K>
+    <portrait4K>https://picsum.photos/id/20/2160x3840.jpg</portrait4K>
+    <ultraWide5K>https://picsum.photos/id/30/5120x2880.jpg</ultraWide5K>
+    <square3K>https://picsum.photos/id/40/3000x3000.jpg</square3K>
+    <fullHD>https://picsum.photos/id/50/1920x1080.jpg</fullHD>
+    <twoK>https://picsum.photos/id/60/2560x1440.jpg</twoK>
+  </largeImages>
+  
+  <withParameters>
+    <description>Image URLs with common query parameters</description>
+    <widthHeight>https://dummyimage.com/800x600/0ea5e9/ffffff.jpg?text=800x600</widthHeight>
+    <quality>https://dummyimage.com/400x300/ef4444/ffffff.jpg?text=Quality+Test</quality>
+    <cache>https://picsum.photos/id/100/400x300.jpg</cache>
+    <multiple>https://dummyimage.com/800x600/1e40af/ffffff.jpg?text=Multi+Params</multiple>
+  </withParameters>
+  
+  <multipleInText>
+    <description>Mixed image and text links for real-world testing</description>
+    <sentence>Preview this image https://picsum.photos/id/11/400x300.jpg and keep reading text after link. Also test large image https://picsum.photos/id/100/3840x2160.jpg.</sentence>
+    <mixed>Normal link https://example.com/docs and image link https://dummyimage.com/200x100/ef4444/ffffff.webp in same value. Extra large image https://picsum.photos/id/200/4096x2304.jpg.</mixed>
+  </multipleInText>
+  
+  <svgLinks>
+    <description>SVG images from reliable CDN and open-source sources</description>
+    <wikipediaLogo>https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg</wikipediaLogo>
+    <githubIcon>https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg</githubIcon>
+    <reactIcon>https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg</reactIcon>
+    <typescriptIcon>https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/typescript.svg</typescriptIcon>
+    <nodeIcon>https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/node-dot-js.svg</nodeIcon>
+    <w3cLogo>https://www.w3.org/Graphics/SVG/logo.svg</w3cLogo>
+  </svgLinks>
+  
+  <dynamicGenerated>
+    <description>Dynamically generated images via dummyimage.com with various parameters</description>
+    <blue>https://dummyimage.com/300x200/0ea5e9/ffffff.png?text=Blue</blue>
+    <red>https://dummyimage.com/300x200/ef4444/ffffff.png?text=Red</red>
+    <green>https://dummyimage.com/300x200/22c55e/ffffff.png?text=Green</green>
+    <purple>https://dummyimage.com/300x200/a855f7/ffffff.png?text=Purple</purple>
+  </dynamicGenerated>
+  
+  <testList>
+    <item>https://picsum.photos/id/15/400x300.jpg</item>
+    <item>https://picsum.photos/id/25/400x300.jpg</item>
+    <item>https://picsum.photos/id/35/400x300.jpg</item>
+    <item>https://dummyimage.com/300x200/1f2937/ffffff.webp?text=WebP+1</item>
+    <item>https://dummyimage.com/300x200/7c3aed/ffffff.gif?text=GIF+1</item>
+    <item>https://upload.wikimedia.org/wikipedia/commons/4/4f/SVG_Logo.svg</item>
+  </testList>
+  
+  <edgeCases>
+    <description>Edge cases for error handling</description>
+    <broken>https://example.com/images/does-not-exist-12345-xyz.jpg</broken>
+    <incomplete>https://example.com/images/</incomplete>
+    <malformed>not-a-valid-url</malformed>
+    <nonImageUrl>https://www.wikipedia.org/</nonImageUrl>
+  </edgeCases>
+  
+  <localAssetsReference>
+    <description>Reference to local assets served by xml-server (fallback/testing)</description>
+    <note>Local assets are available but open-source URLs above are preferred</note>
+    <photoLocal>http://localhost:3001/images/photo.jpg</photoLocal>
+    <vectorLocal>http://localhost:3001/images/vector.svg</vectorLocal>
+  </localAssetsReference>
+</root>

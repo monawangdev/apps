@@ -1,0 +1,52 @@
+$brand: #22c55e
+$surface: #0f172a
+$surface-alt: #111827
+$text: #f8fafc
+$radius: 1.25rem
+
+=card-shadow($color)
+  box-shadow: 0 20px 48px rgba($color, 0.14)
+
+body
+  margin: 0
+  font-family: Inter, system-ui, sans-serif
+  background: radial-gradient(circle at top left, rgba($brand, 0.16), transparent 35%), $surface
+  color: $text
+
+.container
+  max-width: 1080px
+  margin: 0 auto
+  padding: 2rem
+
+.card
+  +card-shadow(#000)
+  background: $surface-alt
+  border-radius: $radius
+  border: 1px solid rgba(148, 163, 184, 0.18)
+  padding: 2rem 2.25rem
+
+.card__title
+  margin: 0 0 0.75rem
+  font-size: 2rem
+
+.button
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  gap: 0.5rem
+  padding: 0.9rem 1.3rem
+  background: $brand
+  color: white
+  border: none
+  border-radius: 999px
+  transition: opacity 180ms ease
+
+.button:hover
+  opacity: 0.92
+
+@media screen and (max-width: 760px)
+  .container
+    padding: 1.2rem
+
+  .card
+    padding: 1.5rem

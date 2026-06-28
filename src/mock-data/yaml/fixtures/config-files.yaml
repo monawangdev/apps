@@ -1,0 +1,111 @@
+# Real-world configuration file examples
+docker_compose:
+  version: '3.8'
+  services:
+    web:
+      build: .
+      ports:
+        - "8080:8080"
+      environment:
+        - NODE_ENV=production
+        - DATABASE_URL=postgres://db:5432/myapp
+      depends_on:
+        - db
+        - redis
+      volumes:
+        - ./src:/app/src
+      restart: unless-stopped
+    
+    db:
+      image: postgres:15
+      environment:
+        POSTGRES_DB: myapp
+        POSTGRES_USER: user
+        POSTGRES_PASSWORD: password
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+    
+    redis:
+      image: redis:7-alpine
+      ports:
+        - "6379:6379"
+  
+  volumes:
+    postgres_data:
+
+github_actions:
+  name: CI/CD Pipeline
+  on:
+    push:
+      branches: [main, develop]
+    pull_request:
+      branches: [main]
+  
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      strategy:
+        matrix:
+          node-version: [18, 20, 22]
+      
+      steps:
+        - uses: actions/checkout@v4
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v4
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: npm
+        - run: npm ci
+        - run: npm run build
+        - run: npm test
+    
+    deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      if: github.ref == 'refs/heads/main'
+      steps:
+        - uses: actions/checkout@v4
+        - name: Deploy to production
+          run: ./scripts/deploy.sh
+
+kubernetes_deployment:
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: myapp-deployment
+    labels:
+      app: myapp
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        app: myapp
+    template:
+      metadata:
+        labels:
+          app: myapp
+      spec:
+        containers:
+          - name: myapp
+            image: myapp:1.2.0
+            ports:
+              - containerPort: 8080
+            resources:
+              requests:
+                memory: 256Mi
+                cpu: 250m
+              limits:
+                memory: 512Mi
+                cpu: 500m
+            livenessProbe:
+              httpGet:
+                path: /health
+                port: 8080
+              initialDelaySeconds: 30
+              periodSeconds: 10
+            readinessProbe:
+              httpGet:
+                path: /ready
+                port: 8080
+              initialDelaySeconds: 5
+              periodSeconds: 5

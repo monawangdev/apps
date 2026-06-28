@@ -1,0 +1,271 @@
+# ============================================================
+# YAML Comments Fixture — Comprehensive Test Data
+# Covers all comment placement patterns per YAML 1.2 spec §6.6
+# ============================================================
+
+# ── Document-level comment ──────────────────────────────────
+# This block appears before any content and describes the
+# overall purpose of the file. Parsers should preserve it
+# when round-tripping with comment-aware libraries.
+
+# Top-level scalar key with inline comment
+application: yaml-prettify  # the extension being tested
+
+# ── Section: Server Configuration ───────────────────────────
+# Comments before a mapping act as section headers, similar
+# to how developers annotate config files in practice.
+server:
+  host: localhost       # bind address
+  port: 8080            # default HTTP port
+  # TLS settings — disabled by default
+  tls:
+    enabled: false      # set true for HTTPS
+    cert: /etc/ssl/cert.pem
+    key: /etc/ssl/key.pem   # keep permissions 0600
+  # Timeouts (milliseconds)
+  timeouts:
+    read: 30000         # 30 seconds
+    write: 60000        # 1 minute
+    idle: 120000        # 2 minutes
+    # graceful shutdown period
+    shutdown: 5000
+
+# ── Section: Database ───────────────────────────────────────
+# Multi-line comment block explaining the database section.
+# Each line is a separate comment node in the AST.
+# Useful for testing how the prettifier handles consecutive
+# comment lines without interleaved content.
+database:
+  engine: postgres      # or mysql, sqlite
+  host: db.internal     # internal DNS
+  port: 5432
+  name: app_production
+  # Connection pool tuning
+  pool:
+    min: 5              # minimum idle connections
+    max: 50             # hard ceiling
+    # Idle timeout — connections unused longer than this
+    # are returned to the pool and closed.
+    idle_timeout: 30000
+    # Acquire timeout — how long to wait for a free
+    # connection before throwing an error.
+    acquire_timeout: 10000
+  # Read replicas for horizontal scaling
+  replicas:
+    # Primary read replica
+    - host: replica-1.db.internal
+      port: 5432
+      weight: 60        # percentage of read traffic
+    # Secondary read replica
+    - host: replica-2.db.internal
+      port: 5432
+      weight: 40
+    # Tertiary — currently offline
+    # - host: replica-3.db.internal
+    #   port: 5432
+    #   weight: 0
+
+# ── Section: Users ──────────────────────────────────────────
+# Sequence with comments before, between, and after items.
+users:
+  # Admin accounts — full system access
+  - name: Alice
+    role: admin         # primary administrator
+    email: alice@example.com
+    # MFA is mandatory for admin accounts
+    mfa_enabled: true
+  # Regular user accounts
+  - name: Bob
+    role: editor        # can edit but not delete
+    email: bob@example.com
+    mfa_enabled: false  # optional for editors
+  # Guest accounts — read-only access
+  - name: Charlie
+    role: viewer
+    email: charlie@example.com
+    mfa_enabled: false
+  # Service accounts (non-human)
+  - name: ci-bot
+    role: deployer      # CI/CD pipeline account
+    email: null         # no email for bots
+    mfa_enabled: false
+
+# ── Section: Feature Flags ──────────────────────────────────
+# Boolean flags controlling feature rollout.
+# Inline comments document the purpose of each flag.
+features:
+  dark_mode: true           # shipped in v1.2
+  experimental_editor: false # behind beta flag
+  # New features under consideration
+  # ai_suggestions: false   # waiting on API quota
+  # collaborative_editing: false
+  notifications:
+    email: true             # transactional emails
+    push: false             # mobile push — not yet implemented
+    # in-app notifications
+    in_app: true
+    # Quiet hours — suppress non-critical notifications
+    quiet_hours:
+      enabled: true
+      start: "22:00"        # 10 PM
+      end: "07:00"          # 7 AM
+      # timezone for quiet hours calculation
+      timezone: America/New_York
+
+# ── Section: Logging ────────────────────────────────────────
+logging:
+  level: info               # debug | info | warn | error
+  # Output format
+  format: json              # json | text | pretty
+  # Log destinations
+  outputs:
+    # Console output — always enabled in development
+    - type: console
+      level: debug          # override for console only
+    # File output — rotated daily
+    - type: file
+      path: /var/log/app/app.log
+      max_size: 100MB       # rotate when file exceeds this
+      max_age: 30           # days to keep old logs
+      # Compression for archived logs
+      compress: true
+    # Remote syslog — production only
+    # - type: syslog
+    #   host: logs.internal
+    #   port: 514
+    #   protocol: udp
+
+# ── Section: Nested Comments in Deep Structures ─────────────
+# Testing comment preservation at various nesting depths.
+infrastructure:
+  # Cloud provider configuration
+  cloud:
+    provider: aws           # aws | gcp | azure
+    region: us-east-1
+    # VPC settings
+    vpc:
+      cidr: 10.0.0.0/16
+      # Public subnets — internet-facing
+      public_subnets:
+        - 10.0.1.0/24       # AZ-a
+        - 10.0.2.0/24       # AZ-b
+        - 10.0.3.0/24       # AZ-c
+      # Private subnets — internal only
+      private_subnets:
+        - 10.0.10.0/24      # AZ-a
+        - 10.0.20.0/24      # AZ-b
+        - 10.0.30.0/24      # AZ-c
+      # NAT gateway for outbound traffic from private subnets
+      nat_gateway:
+        enabled: true
+        # Elastic IP allocation
+        eip_allocation_id: eipalloc-0abc123def456
+  # Kubernetes cluster
+  kubernetes:
+    version: "1.29"         # EKS version
+    # Node groups
+    node_groups:
+      # General purpose nodes
+      - name: general
+        instance_type: m6i.xlarge
+        min_size: 3
+        max_size: 10
+        # Spot instances for cost savings
+        capacity_type: ON_DEMAND  # ON_DEMAND | SPOT
+      # GPU nodes for ML workloads
+      - name: gpu
+        instance_type: g5.2xlarge
+        min_size: 0         # scale to zero when idle
+        max_size: 4
+        capacity_type: SPOT  # acceptable for batch ML jobs
+        # Taints to prevent non-GPU pods from scheduling here
+        taints:
+          - key: nvidia.com/gpu
+            value: "true"
+            effect: NoSchedule
+
+# ── Section: Inline Comments on Various Value Types ─────────
+type_examples:
+  string_val: hello world   # plain string
+  quoted_val: "hello"       # double-quoted string
+  single_quoted: 'hello'    # single-quoted string
+  integer_val: 42           # integer
+  float_val: 3.14159        # float
+  bool_true: true           # boolean true
+  bool_false: false         # boolean false
+  null_val: null            # explicit null
+  tilde_null: ~             # tilde null
+  date_val: 2025-03-15      # ISO date
+  datetime_val: 2025-03-15T10:30:00Z  # ISO datetime
+  infinity_val: .inf        # positive infinity
+  nan_val: .nan             # not a number
+  # Multiline values with comments
+  literal_block: |          # literal block scalar
+    Line one.
+    Line two.
+    Line three.
+  folded_block: >           # folded block scalar
+    This text will be
+    folded into a single
+    paragraph.
+
+# ── Section: Empty and Edge Cases ───────────────────────────
+# Comments around empty collections and null values.
+edge_cases:
+  # Empty mapping
+  empty_object: {}          # inline empty object
+  # Empty sequence
+  empty_array: []           # inline empty array
+  # Null variations
+  null_explicit: null       # explicit null keyword
+  null_tilde: ~             # tilde shorthand
+  null_empty:               # implicit null (no value)
+  # Boolean edge cases
+  yes_string: "yes"         # quoted to prevent boolean coercion
+  no_string: "no"           # quoted to prevent boolean coercion
+  # Numeric edge cases
+  octal: 0o755              # octal notation
+  hex: 0xFF                 # hexadecimal notation
+  # Comment-only mapping value — the value below is null
+  # because there's nothing after the colon
+  comment_after_colon:      # this key has null value
+
+# ── Section: Anchors and Aliases with Comments ──────────────
+# Testing how comments interact with anchor/alias syntax.
+defaults: &defaults         # shared default settings
+  adapter: postgres
+  encoding: utf8
+  pool: 5                   # default pool size
+
+environments:
+  # Development environment
+  development:
+    <<: *defaults           # merge defaults
+    database: app_dev
+    host: localhost         # local database
+  # Staging environment
+  staging:
+    <<: *defaults           # merge defaults
+    database: app_staging
+    host: staging-db.internal
+  # Production environment
+  production:
+    <<: *defaults           # merge defaults
+    database: app_prod
+    host: prod-db.internal
+    pool: 25                # override: higher pool for production
+
+# ── Section: Long Inline Comments ───────────────────────────
+# Testing rendering of very long inline comments that may
+# need to be truncated or wrapped in the prettifier UI.
+api:
+  base_url: https://api.example.com/v2  # this is the production API endpoint; staging uses https://staging-api.example.com/v2 instead
+  timeout: 30000  # milliseconds — if the API does not respond within this window the client will abort the request and retry with exponential backoff
+  retry:
+    max_attempts: 3  # total attempts including the initial request; set to 1 to disable retries entirely
+    backoff_base: 1000  # base delay in ms; actual delay is backoff_base * 2^(attempt-1) with jitter
+
+# ── Final comment block ─────────────────────────────────────
+# End of configuration file.
+# For questions, see https://docs.example.com/config
+# Last updated: 2025-03-15

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nested structures with multiple depth levels -->
+<root>
+  <meta>
+    <type>nested</type>
+    <description>Complex nested structure with multiple depth levels</description>
+  </meta>
+  <company>
+    <name>TechCorp Inc</name>
+    <departments>
+      <department id="eng">
+        <name>Engineering</name>
+        <teams>
+          <team>
+            <name>Backend</name>
+            <members>
+              <member id="1" role="lead">Alice Johnson</member>
+              <member id="2" role="engineer">Bob Smith</member>
+              <member id="3" role="engineer">Carol White</member>
+            </members>
+            <projects>
+              <project>
+                <name>API Server</name>
+                <status>active</status>
+                <technologies>
+                  <tech>Node.js</tech>
+                  <tech>PostgreSQL</tech>
+                  <tech>Docker</tech>
+                </technologies>
+              </project>
+              <project>
+                <name>Microservices</name>
+                <status>planning</status>
+                <technologies>
+                  <tech>Kubernetes</tech>
+                  <tech>gRPC</tech>
+                </technologies>
+              </project>
+            </projects>
+          </team>
+          <team>
+            <name>Frontend</name>
+            <members>
+              <member id="4" role="lead">David Chen</member>
+              <member id="5" role="engineer">Emma Davis</member>
+            </members>
+            <projects>
+              <project>
+                <name>Web Dashboard</name>
+                <status>active</status>
+                <technologies>
+                  <tech>React</tech>
+                  <tech>TypeScript</tech>
+                  <tech>Tailwind CSS</tech>
+                </technologies>
+              </project>
+            </projects>
+          </team>
+        </teams>
+      </department>
+      <department id="sales">
+        <name>Sales</name>
+        <teams>
+          <team>
+            <name>Enterprise</name>
+            <members>
+              <member id="6" role="manager">Frank Miller</member>
+              <member id="7" role="rep">Grace Lee</member>
+            </members>
+          </team>
+        </teams>
+      </department>
+    </departments>
+  </company>
+</root>

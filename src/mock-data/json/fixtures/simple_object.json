@@ -1,0 +1,39 @@
+{
+    "user": {
+        "id": 12345,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "age": 30,
+        "active": true,
+        "profile": {
+            "avatar": "https://example.com/avatar.jpg",
+            "bio": "Software developer passionate about clean code",
+            "skills": [
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Node.js"
+            ],
+            "social": {
+                "github": "https://github.com/johndoe",
+                "linkedin": "https://linkedin.com/in/johndoe",
+                "twitter": "https://twitter.com/johndoe"
+            }
+        },
+        "preferences": {
+            "theme": "dark",
+            "notifications": {
+                "email": true,
+                "push": false,
+                "sms": true
+            },
+            "language": "en-US"
+        },
+        "stats": {
+            "posts": 42,
+            "followers": 1234,
+            "following": 567,
+            "lastLogin": "2024-01-15T10:30:00Z"
+        }
+    }
+}

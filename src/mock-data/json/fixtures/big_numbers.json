@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "description": "Big numbers and precision edge cases",
+    "note": "混合使用 JS Number 和字符串来模拟超出安全范围的大整数"
+  },
+  "ieee754Bounds": {
+    "maxSafeInteger": 9007199254740991,
+    "aboveMaxSafeIntegerNumber": 9007199254740992,
+    "aboveMaxSafeIntegerString": "9007199254740993",
+    "minSafeInteger": -9007199254740991,
+    "belowMinSafeIntegerNumber": -9007199254740992,
+    "belowMinSafeIntegerString": "-9007199254740993"
+  },
+  "bigIntegersAsString": {
+    "hundredDigits": "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890",
+    "negativeHundredDigits": "-1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "idLike": "20250305123456789012345678901234567890"
+  },
+  "bigIntegersInArray": [
+    "999999999999999999999999999999999999999999",
+    "1000000000000000000000000000000000000000000",
+    "-999999999999999999999999999999999999999999"
+  ],
+  "highPrecisionDecimals": {
+    "pi": "3.14159265358979323846264338327950288419716939937510",
+    "e": "2.71828182845904523536028747135266249775724709369995",
+    "goldenRatio": "1.61803398874989484820458683436563811772030917980576"
+  },
+  "exponents": {
+    "largePositive": 1e+308,
+    "overflowToInfinity": null,
+    "tinyPositive": 5e-324,
+    "underflowToZero": 0,
+    "asStringLarge": "1e1000",
+    "asStringTiny": "4.94e-325"
+  },
+  "mixedUsage": {
+    "balanceNumber": 1000000000000000,
+    "balanceString": "1000000000000000000000000000000",
+    "debtNumber": -750000000000000,
+    "debtString": "-750000000000000000000000000000",
+    "ratePercent": 1.234e-10,
+    "ratePercentString": "0.0000000001234"
+  }
+}

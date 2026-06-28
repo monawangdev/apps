@@ -1,0 +1,116 @@
+# YAML 1.2.2 Core Schema Type Examples
+# Reference: https://yaml.org/spec/1.2.2/
+
+# Null representations (Section 10.3.2)
+null_variants:
+  tilde: ~
+  word: null
+  Capitalized: Null
+  upper: NULL
+  empty:
+
+# Boolean representations (Section 10.3.2)
+boolean_variants:
+  true_lower: true
+  True_cap: True
+  TRUE_upper: TRUE
+  false_lower: false
+  False_cap: False
+  FALSE_upper: FALSE
+
+# Integer representations (Section 10.3.2)
+integer_variants:
+  decimal: 42
+  negative: -17
+  zero: 0
+  octal: 0o17
+  hex: 0xFF
+  binary_like: 0b1010
+
+# Float representations (Section 10.3.2)
+float_variants:
+  simple: 3.14
+  negative: -0.5
+  exponential: 6.022e23
+  neg_exponent: 1.6e-19
+  infinity: .inf
+  neg_infinity: -.inf
+  not_a_number: .nan
+
+# Timestamp (Section 10.3.2)
+timestamps:
+  date: 2025-03-05
+  datetime: 2025-03-05T10:30:00Z
+  with_offset: 2025-03-05T10:30:00+08:00
+  spaced: 2025-03-05 10:30:00
+
+# String quoting styles
+string_styles:
+  plain: This is a plain scalar
+  single_quoted: 'Contains ''escaped'' single quotes'
+  double_quoted: "Contains \"escaped\" double quotes and \n newlines"
+  literal_block: |
+    Preserves newlines
+    exactly as written
+  folded_block: >
+    Folds newlines
+    into spaces
+
+# Sequence styles
+sequence_styles:
+  block_sequence:
+    - item1
+    - item2
+    - item3
+  flow_sequence: [item1, item2, item3]
+  nested_sequences:
+    - - nested1a
+      - nested1b
+    - - nested2a
+      - nested2b
+
+# Mapping styles
+mapping_styles:
+  block_mapping:
+    key1: value1
+    key2: value2
+  flow_mapping: {key1: value1, key2: value2}
+  complex_keys:
+    ? [complex, key]
+    : complex value
+    ? {mapping: key}
+    : another value
+
+# Tags (Section 6.8)
+tagged_values:
+  explicit_str: !!str 42
+  explicit_int: !!int "123"
+  explicit_float: !!float "3.14"
+  explicit_bool: !!bool "true"
+  explicit_null: !!null ""
+  explicit_seq: !!seq [a, b, c]
+  explicit_map: !!map {key: value}
+
+# Anchors and Aliases (Section 3.2.2.2)
+anchor_examples:
+  defaults: &defaults
+    timeout: 30
+    retries: 3
+    verbose: false
+  
+  service_a:
+    name: alpha
+    <<: *defaults
+    timeout: 60
+  
+  service_b:
+    name: beta
+    <<: *defaults
+
+# Directives
+# %YAML 1.2 directive is implicit in this document
+# %TAG directives can define custom tag handles
+
+# Document markers
+# --- starts a document
+# ... ends a document
