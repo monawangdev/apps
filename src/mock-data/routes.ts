@@ -15,10 +15,18 @@ type MockRoute = {
   kind: BodyKind;
 };
 
+export type MockIndexEntry = {
+  route: string;
+  contentType: string;
+  url: string;
+  plainTextUrl?: string;
+  yamlUrl?: string;
+};
+
 const TYPE_CONFIG: Record<MockType, { contentType: string; extension: string }> = {
   json: { contentType: 'application/json; charset=utf-8', extension: 'json' },
   xml: { contentType: 'application/xml; charset=utf-8', extension: 'xml' },
-  yaml: { contentType: 'text/yaml; charset=utf-8', extension: 'yaml' },
+  yaml: { contentType: 'text/html; charset=utf-8', extension: 'html' },
   css: { contentType: 'text/css; charset=utf-8', extension: 'css' },
 };
 
@@ -296,15 +304,22 @@ export function getAllMockStaticPaths() {
 
 export function getMockIndex() {
   return Object.fromEntries(
-    mockTypes.map((type) => [
-      type,
-      getMockRoutes(type).map((route) => ({
-        route,
-        contentType: getMockContentType(type),
-        url: `${PUBLIC_BASE_PATH}/api/mock/${type}/${route}.${TYPE_CONFIG[type].extension}`,
-      })),
-    ]),
-  );
+    mockTypes.map((type) => [type, getMockIndexEntries(type)]),
+  ) as Record<MockType, MockIndexEntry[]>;
+}
+
+export function getMockIndexEntries(type: MockType): MockIndexEntry[] {
+  return getMockRoutes(type).map((route) => ({
+    route,
+    contentType: getMockContentType(type),
+    url: `${PUBLIC_BASE_PATH}/api/mock/${type}/${route}.${TYPE_CONFIG[type].extension}`,
+    ...(type === 'yaml'
+      ? {
+          plainTextUrl: `${PUBLIC_BASE_PATH}/api/mock/${type}/${route}.txt`,
+          yamlUrl: `${PUBLIC_BASE_PATH}/api/mock/${type}/${route}.yaml`,
+        }
+      : {}),
+  }));
 }
 
 export function createMockResponse(type: string | undefined, path: string | undefined): Response {
@@ -321,6 +336,46 @@ export function createMockResponse(type: string | undefined, path: string | unde
     status: 200,
     headers: {
       'Content-Type': getMockContentType(type),
+      'Access-Control-Allow-Origin': '*',
+      'Cache-Control': 'public, max-age=3600',
+    },
+  });
+}
+
+export function createMockTextResponse(type: string | undefined, path: string | undefined): Response {
+  if (!isMockType(type) || !path) {
+    return new Response('Not found', { status: 404 });
+  }
+
+  const route = ROUTE_LOOKUP[type].get(path);
+  if (!route) {
+    return new Response('Not found', { status: 404 });
+  }
+
+  return new Response(getBody(type, route), {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Access-Control-Allow-Origin': '*',
+      'Cache-Control': 'public, max-age=3600',
+    },
+  });
+}
+
+export function createMockHtmlResponse(type: string | undefined, path: string | undefined): Response {
+  if (!isMockType(type) || !path) {
+    return new Response('Not found', { status: 404 });
+  }
+
+  const route = ROUTE_LOOKUP[type].get(path);
+  if (!route) {
+    return new Response('Not found', { status: 404 });
+  }
+
+  return new Response(getBody(type, route), {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
       'Access-Control-Allow-Origin': '*',
       'Cache-Control': 'public, max-age=3600',
     },

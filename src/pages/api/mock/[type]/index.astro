@@ -1,0 +1,273 @@
+---
+import {
+  getMockContentType,
+  getMockIndexEntries,
+  mockTypes,
+  type MockType,
+} from '../../../../mock-data/routes';
+
+export function getStaticPaths() {
+  return mockTypes.map((type) => ({ params: { type } }));
+}
+
+const type = Astro.params.type as MockType;
+const entries = getMockIndexEntries(type);
+const contentType = getMockContentType(type);
+const title = `${type.toUpperCase()} mock data`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f8fb;
+        --text: #101319;
+        --muted: #5f6977;
+        --line: #d8dde6;
+        --panel: #ffffff;
+        --link: #0b63ce;
+        --code: #eef2f7;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101217;
+          --text: #eef2f7;
+          --muted: #9aa5b5;
+          --line: #2a303a;
+          --panel: #171b22;
+          --link: #7ab7ff;
+          --code: #202632;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(1040px, calc(100vw - 32px));
+        margin: 40px auto;
+      }
+
+      header {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        margin: 0 0 6px;
+        font-size: clamp(1.7rem, 3vw, 2.4rem);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      nav a,
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 36px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        color: var(--text);
+        text-decoration: none;
+        background: var(--panel);
+      }
+
+      nav a[aria-current="page"] {
+        border-color: var(--link);
+        color: var(--link);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 16px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      code {
+        padding: 2px 6px;
+        border-radius: 5px;
+        background: var(--code);
+        color: var(--text);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 0.92em;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      th,
+      td {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 650;
+        text-transform: uppercase;
+      }
+
+      tr:last-child td {
+        border-bottom: 0;
+      }
+
+      a {
+        color: var(--link);
+      }
+
+      .route {
+        word-break: break-word;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          align-items: start;
+          flex-direction: column;
+        }
+
+        table,
+        thead,
+        tbody,
+        tr,
+        th,
+        td {
+          display: block;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          border-bottom: 1px solid var(--line);
+        }
+
+        tr:last-child {
+          border-bottom: 0;
+        }
+
+        td {
+          border: 0;
+          padding: 10px 12px;
+        }
+
+        td::before {
+          content: attr(data-label);
+          display: block;
+          margin-bottom: 4px;
+          color: var(--muted);
+          font-size: 0.75rem;
+          font-weight: 650;
+          text-transform: uppercase;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>{title}</h1>
+          <p>Static mock endpoints for formatter testing.</p>
+        </div>
+        <nav aria-label="Mock data types">
+          {
+            mockTypes.map((mockType) => (
+              <a href={`/apps/api/mock/${mockType}/`} aria-current={mockType === type ? 'page' : undefined}>
+                {mockType.toUpperCase()}
+              </a>
+            ))
+          }
+        </nav>
+      </header>
+
+      <div class="meta">
+        <span>{entries.length} endpoints</span>
+        <span><code>{contentType}</code></span>
+        <a href="/apps/api/mock/index.json">JSON index</a>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Content type</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            entries.map((entry) => (
+              <tr>
+                <td class="route" data-label="Route">
+                  <code>{entry.route}</code>
+                </td>
+                <td data-label="Content type">
+                  <code>{entry.contentType}</code>
+                </td>
+                <td data-label="Links">
+                  <div class="links">
+                    <a class="button" href={entry.url}>Open</a>
+                    {entry.yamlUrl && (
+                      <a class="button" href={entry.yamlUrl}>YAML</a>
+                    )}
+                    {entry.plainTextUrl && (
+                      <a class="button" href={entry.plainTextUrl}>Text</a>
+                    )}
+                  </div>
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
