@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/**
+ * @file charset-demo.css
+ * @description CSS fixture demonstrating @charset declaration and UTF-8 content.
+ * @charset UTF-8
+ */
+
+/* ── Reset ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── Root variables ────────────────────────────────────── */
+:root {
+    --color-primary: #3b82f6;
+    --color-surface: #ffffff;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+    --radius: 8px;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Base ──────────────────────────────────────────────── */
+body {
+    font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-surface);
+}
+
+/* ── 中文标题 (Chinese heading demo) ───────────────────── */
+.标题 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+/* ── Card component ────────────────────────────────────── */
+.card {
+    padding: 1.5rem;
+    background: var(--color-surface);
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.card__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card__body {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+/* ── UTF-8 content demo ────────────────────────────────── */
+.content-ja::before {
+    content: "こんにちは世界 — ";
+}
+
+.content-ko::before {
+    content: "안녕하세요 세계 — ";
+}
+
+.content-zh::before {
+    content: "你好世界 — ";
+}
+
+.content-emoji::before {
+    content: "🎉 🚀 💡 — ";
+}
+
+/* ── Attribute selectors with Unicode ──────────────────── */
+[data-lang="zh"] {
+    font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+[data-lang="ja"] {
+    font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+}
+
+[data-lang="ko"] {
+    font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* ── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .标题 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-surface: #1f2937;
+        --color-text: #f9fafb;
+        --color-muted: #9ca3af;
+    }
+
+    .card {
+        border-color: #374151;
+    }
+}

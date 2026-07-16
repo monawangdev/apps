@@ -45,14 +45,21 @@ const jsonLd = [
       <img class="hero-screenshot" src={withBase(`/assets/screenshots/${app.screenshot}`)} alt={`${copy.name} ${t.screenshotPlaceholder}`} />
     </section>
     <section class="feature-section">
-      <div>
+      <div class="section-head">
         <p class="eyebrow">{t.features}</p>
         <h2>{copy.screenshotTitle}</h2>
         <p>{copy.screenshotDescription}</p>
       </div>
-      <ul class="feature-list">
-        {copy.features.map((feature) => <li>{feature}</li>)}
-      </ul>
+      <div class="feature-grid">
+        {copy.features.map((feature) => (
+          <article class="feature-cell">
+            <span class="feature-chip" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.55 17.6 4.4 12.45l1.42-1.42 3.73 3.73 8.23-8.23 1.42 1.42z"/></svg>
+            </span>
+            <p>{feature}</p>
+          </article>
+        ))}
+      </div>
     </section>
     {showcase.length > 0 && (
       <section class="showcase-list" aria-label={copy.screenshotTitle}>

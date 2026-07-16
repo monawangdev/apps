@@ -1,0 +1,11 @@
+id,name,email,department,role,salary,active,created_at
+1,Alice Anderson,alice@example.com,Engineering,Senior,120000,true,2024-01-15
+2,Bob Brown,bob@example.com,Design,Lead,110000,true,2024-02-20
+3,Carol Clark,carol@example.com,Sales,Junior,55000,false,2024-03-10
+4,Dave Davis,dave@example.com,Support,Mid,65000,true,2024-04-05
+5,Eve Evans,eve@example.com,Engineering,Mid,80000,true,2024-05-12
+6,Frank Foster,frank@example.com,Design,Junior,50000,false,2024-06-18
+7,Grace Green,grace@example.com,Sales,Lead,95000,true,2024-07-22
+8,Hank Harris,hank@example.com,Support,Senior,88000,true,2024-08-30
+9,Ivy Ingalls,ivy@example.com,Engineering,Lead,135000,true,2024-09-14
+10,Jack Jones,jack@example.com,Design,Mid,70000,false,2024-10-01

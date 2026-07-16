@@ -1,0 +1,7 @@
+id,empty_field,leading_space,trailing_space,only_spaces,special
+1,,  leading,  trailing,   ,
+2,value,normal,normal,   ,tab\there
+3,,,"quoted with space ",spaced,
+4,plain,,,"multi
+line",newline
+5,, , ,   ,edge

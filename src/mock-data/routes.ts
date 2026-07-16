@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-export const mockTypes = ['json', 'xml', 'yaml', 'css'] as const;
+export const mockTypes = ['json', 'xml', 'yaml', 'css', 'csv', 'js', 'markdown'] as const;
 
 export type MockType = (typeof mockTypes)[number];
 
@@ -28,6 +28,9 @@ const TYPE_CONFIG: Record<MockType, { contentType: string; extension: string }> 
   xml: { contentType: 'application/xml; charset=utf-8', extension: 'xml' },
   yaml: { contentType: 'text/html; charset=utf-8', extension: 'html' },
   css: { contentType: 'text/css; charset=utf-8', extension: 'css' },
+  csv: { contentType: 'text/csv; charset=utf-8', extension: 'csv' },
+  js: { contentType: 'application/javascript; charset=utf-8', extension: 'js' },
+  markdown: { contentType: 'text/markdown; charset=utf-8', extension: 'md' },
 };
 
 const PUBLIC_BASE_PATH = '/apps';
@@ -108,6 +111,50 @@ const CSS_BAD_CASES = {
 }
 `,
   empty: '',
+} as const;
+
+const CSV_BAD_CASES = {
+  empty: '',
+  'whitespace-only': '   \n\t  ',
+  'unterminated-quote': 'name,note\n"Alice,active',
+  'mismatched-columns': 'a,b,c\n1,2\n3,4,5,6',
+  'bare-quote': 'name\nAl"ice',
+  'newline-in-unquoted': 'name,note\nAlice\nBob,active',
+  'trailing-comma': 'a,b,c,\n1,2,3,\n',
+  'stray-quote': 'a,b\n1,2"\n3,4',
+} as const;
+
+const JS_BAD_CASES = {
+  'missing-brace': `function calculateTotal(items) {
+  let total = 0;
+  for (const item of items) {
+    total += item.price * item.quantity;
+  return total;
+}
+`,
+  'invalid-syntax': `const user = {
+  name: "Alice"
+  age: 30,
+};
+`,
+  'unterminated-string': `const message = "Welcome to the dashboard;
+console.log(message);
+`,
+  'reserved-word': `const class = 'primary';
+console.log(class);
+`,
+  empty: '',
+} as const;
+
+const MARKDOWN_BAD_CASES = {
+  empty: '',
+  'whitespace-only': '   \n\t  ',
+  'unclosed-fence': '```js\nconst x = 1;',
+  'unbalanced-bracket': '[link] (https://example.com',
+  'broken-table': '| a | b |\n| 1 |',
+  'stray-pipe': 'text | more |',
+  'nested-code-in-list': '- item\n\t```\ncode\n```',
+  'mixed-heading': '# H1\n##### H5\n### H3',
 } as const;
 
 const jsonRoutes: MockRoute[] = [
@@ -204,6 +251,8 @@ const cssRoutes: MockRoute[] = [
   file('full/dark-theme', 'fixtures/dark_theme.css'),
   file('full/complex-selectors', 'fixtures/complex_selectors.css'),
   file('full/legacy', 'fixtures/legacy.css'),
+  file('full/charset-demo', 'fixtures/charset_demo.css'),
+  file('full/image-assets', 'fixtures/image_assets.css'),
   inline('full/mock', `.card {
   padding: 16px;
   background: #ffffff;
@@ -228,11 +277,94 @@ const cssRoutes: MockRoute[] = [
   ...Object.entries(CSS_BAD_CASES).map(([name, body]) => inline(`full/bad-css/${name}`, body)),
 ];
 
+const csvRoutes: MockRoute[] = [
+  file('small', 'small.csv'),
+  file('full/all', 'fixtures/all.csv'),
+  file('full/nested', 'fixtures/nested.csv'),
+  file('full/large-numbers', 'fixtures/large_numbers.csv'),
+  file('full/emoji', 'fixtures/emoji.csv'),
+  file('full/edge-cases', 'fixtures/edge_cases.csv'),
+  file('full/kitchen-sink', 'fixtures/kitchen_sink.csv'),
+  inline('full/mock', `id,name,role,active
+1,Alice,Admin,true
+2,Bob,Editor,false
+3,Carol,Viewer,true`),
+  inline('full/bad-csv', CSV_BAD_CASES['empty']),
+  json('full/bad-csv/variants', variantList('csv', 'full/bad-csv', Object.keys(CSV_BAD_CASES))),
+  ...Object.entries(CSV_BAD_CASES).map(([name, body]) => inline(`full/bad-csv/${name}`, body)),
+];
+
+const jsRoutes: MockRoute[] = [
+  file('small', 'small.js'),
+  file('full/async-module', 'fixtures/async_module.js'),
+  file('full/legacy-browser', 'fixtures/legacy_browser.js'),
+  file('full/error-handling', 'fixtures/error_handling.js'),
+  file('full/comments', 'fixtures/comments.js'),
+  file('full/jsdoc-comprehensive', 'fixtures/jsdoc-comprehensive.js'),
+  inline('full/mock', `const mockUser = {
+  id: 1,
+  name: 'Alice',
+  roles: ['admin', 'editor'],
+  preferences: { theme: 'dark', notifications: true },
+};
+
+function greetUser(user) {
+  return \`Hello, \${user.name}!\`;
+}
+
+async function loadUserProfile(userId) {
+  const response = await fetch(\`/api/users/\${userId}\`);
+  if (!response.ok) {
+    throw new Error('Failed to load user profile');
+  }
+  return response.json();
+}
+
+export { mockUser, greetUser, loadUserProfile };`),
+  inline('full/bad-js', JS_BAD_CASES['missing-brace']),
+  json('full/bad-js/variants', variantList('js', 'full/bad-js', Object.keys(JS_BAD_CASES))),
+  ...Object.entries(JS_BAD_CASES).map(([name, body]) => inline(`full/bad-js/${name}`, body)),
+];
+
+const markdownRoutes: MockRoute[] = [
+  file('small', 'small.md'),
+  file('full/all', 'fixtures/all.md'),
+  file('full/nested', 'fixtures/nested.md'),
+  file('full/tables', 'fixtures/tables.md'),
+  file('full/code-blocks', 'fixtures/code_blocks.md'),
+  file('full/links-images', 'fixtures/links_images.md'),
+  file('full/emoji', 'fixtures/emoji.md'),
+  file('full/edge-cases', 'fixtures/edge_cases.md'),
+  file('full/kitchen-sink', 'fixtures/kitchen_sink.md'),
+  inline('full/mock', `# Mock Document
+
+A short markdown document used for quick prettify checks.
+
+## Features
+
+- **Bold** and *italic* text
+- \`inline code\`
+- [A link](https://example.com)
+
+> A blockquote with a single line.
+
+| Name | Role |
+| ---- | ----- |
+| Alice | Admin |
+`),
+  inline('full/bad-markdown', MARKDOWN_BAD_CASES['empty']),
+  json('full/bad-markdown/variants', variantList('markdown', 'full/bad-markdown', Object.keys(MARKDOWN_BAD_CASES))),
+  ...Object.entries(MARKDOWN_BAD_CASES).map(([name, body]) => inline(`full/bad-markdown/${name}`, body)),
+];
+
 const ROUTES: Record<MockType, MockRoute[]> = {
   json: jsonRoutes,
   xml: xmlRoutes,
   yaml: yamlRoutes,
   css: cssRoutes,
+  csv: csvRoutes,
+  js: jsRoutes,
+  markdown: markdownRoutes,
 };
 
 const ROUTE_LOOKUP: Record<MockType, Map<string, MockRoute>> = {
@@ -240,6 +372,9 @@ const ROUTE_LOOKUP: Record<MockType, Map<string, MockRoute>> = {
   xml: toLookup(xmlRoutes),
   yaml: toLookup(yamlRoutes),
   css: toLookup(cssRoutes),
+  csv: toLookup(csvRoutes),
+  js: toLookup(jsRoutes),
+  markdown: toLookup(markdownRoutes),
 };
 
 function file(route: string, source: string): MockRoute {

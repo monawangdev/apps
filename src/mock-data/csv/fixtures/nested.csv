@@ -1,0 +1,10 @@
+id,title,description,tags,address
+1,Quoted Comma,"This field, contains a comma",alpha,"city, country"
+2,Quoted Newline,"Line one
+Line two
+Line three",beta,"street
+number"
+3,Quoted Quote,"He said ""hello"" to me",gamma,"value with ""quotes"""
+4,Mixed,"Combined, comma and
+newline and ""quote""",delta,"a, b, c"
+5,Plain,No special chars,epsilon,simple

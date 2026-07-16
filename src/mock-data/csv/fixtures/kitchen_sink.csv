@@ -1,0 +1,8 @@
+id,name,role,emoji,big_number,quoted,active,created_at,note
+1,Alice,Admin,📦,9007199254740991,"Lorem, ipsum dolor",true,2024-01-15,First row
+2,Bob,Editor,⭐,-9007199254740991,"Line one
+Line two",false,2024-02-20,Has newline
+3,Carol,Viewer,🔥,123456789012345678901234567890,"He said ""hi""",true,2024-03-10,Quotes 🚀
+4,Dave,Lead,🐛,1.0e+308,"comma, newline
+and ""quote""",true,2024-04-05,All combined
+5,Eve,Junior,✅,750000000000000,plain text,false,2024-05-12,Last row

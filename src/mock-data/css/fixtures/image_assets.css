@@ -1,0 +1,58 @@
+/* Image asset fixtures for css-prettify link detection. */
+
+.hero {
+  background-image: url('https://picsum.photos/seed/hero/1600/900');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-image: url("https://picsum.photos/seed/avatar/128/128");
+}
+
+.card__thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-image: url(https://picsum.photos/seed/card/640/360);
+  background-repeat: no-repeat;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://picsum.photos/seed/icon/24/24');
+}
+
+.logo {
+  content: url("https://picsum.photos/seed/logo/200/80");
+  display: block;
+}
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://picsum.photos/seed/banner/1200/400');
+  background-size: cover;
+}
+
+.sprite {
+  background-image: url(https://picsum.photos/seed/sprite/256/256);
+  background-position: -32px -32px;
+}
+
+.thumbnail {
+  list-style-image: url('https://picsum.photos/seed/bullet/16/16');
+}
+
+/* Fallback patterns with protocol-relative and raw URLs. */
+.protocol-relative {
+  background-image: url('//picsum.photos/seed/relative/800/600');
+}
+
+.external-docs::after {
+  content: "See docs at https://developer.mozilla.org/en-US/docs/Web/CSS";
+}
